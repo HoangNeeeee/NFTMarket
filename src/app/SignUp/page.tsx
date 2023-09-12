@@ -8,7 +8,7 @@ export default function Home() {
       <div className="md:w-[45%] flex flex-col w-full relative md:h-auto object-cover h-[300px]">
         <Image
           className="object-cover"
-          src="/ImagePlaceholder.png"d
+          src="/ImagePlaceholder.png"
           alt="anhbentrai"
           fill
         />
@@ -26,6 +26,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-
   );
 }
