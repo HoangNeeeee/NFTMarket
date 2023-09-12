@@ -16,7 +16,7 @@ export default function Page2() {
                 NFT marketplace UI created with Anima for Figma. Collect, buy
                 and sell art from more than 20k NFT artists.
               </h2>
-              <a className="w-[220px]" href="http://localhost:3000/SignUp">
+              <a className="w-[220px]" href="/SignUp">
                 <button className="bg-[#A259FF] w-[220px] h-[60px] flex items-center justify-center font-sans font-semibold text-white rounded-2xl bg-gradient-to-l from-[#9400FF] to-[#94FFFF] hover:bg-gradient-to-r hover:from-[#9400FF] hover:to-[#94FFFF] transition delay-500">
                   <Image
                     className="mr-3"
