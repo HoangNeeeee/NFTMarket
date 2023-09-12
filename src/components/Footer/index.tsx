@@ -11,9 +11,9 @@ import TwitterIcon from "@/assets/icons/ic_twitter.svg";
 import InstagramIcon from "@/assets/icons/ic_instagram.svg";
 export function Footer() {
   return (
-    <footer className="py-10 flex flex-col bg-[#2B2B2B] justify-between bg-slate-700 px-20">
-      <div className="flex flex-col md:flex-row  justify-between">
-        <div className="flex flex-col max-w-[250px]">
+    <footer className="py-10 flex flex-col bg-[#3B3B3B] justify-between lg:px-[115px] px-[30px] ">
+      <div className="flex flex-col gap-[30px] lg:flex-row lg:justify-between">
+        <div className="flex flex-col lg:max-w-[250px]">
           <div className="flex flex-row items-center">
             <Image
               className="mr-4"
@@ -23,13 +23,13 @@ export function Footer() {
               width={30}
               height={30}
             />
-            <p className="text-[#CCCCCC] text-xl font-mono ">NFT Marketplace</p>
+            <p className="text-white text-xl font-mono ">NFT Marketplace</p>
           </div>
-          <p className="pt-6 text-[#CCCCCC]">
+          <p className=" text-[#CCCCCC] mt-[30px]">
             NFT marketplace UI created with Anima for Figma.
           </p>
-          <p className="pt-5 text-[#CCCCCC]">Join our community</p>
-          <div className="flex flex-row">
+          <p className="text-[#CCCCCC] mt-[20px]">Join our community</p>
+          <div className="flex flex-row mt-[15px]">
             <a href="https://discord.com/users/585513543470940178/">
               <Image
                 className="mr-4"
@@ -60,14 +60,6 @@ export function Footer() {
                 height={30}
               />
             </a>
-            {/* <FontAwesomeIcon
-            className="h-8 w-8 mt-2 text-gray-500"
-            icon={faDiscord as IconProp}
-          />
-          <FontAwesomeIcon
-            className="h-8 w-8 mt-2"
-            icon={faTwitter as IconProp}
-          /> */}
             <a href="https://www.instagram.com/emhoangdangthooxy/">
               <Image
                 className="mr-4"
@@ -80,39 +72,41 @@ export function Footer() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col max-w-[250px]">
-          <div className="flex flex-col text-[#CCCCCC] text-xl font-mono">
+        <div className="flex flex-col lg:max-w-[250px]">
+          <div className="flex flex-col text-white text-xl font-mono">
             Explore
           </div>
-          <p className="pt-6 text-[#CCCCCC]">MarketPlace</p>
-          <p className="pt-5 text-[#CCCCCC]">Rankings</p>
-          <p className="pt-5 text-[#CCCCCC]">Connect a wallet</p>
+          <p className=" text-[#CCCCCC] mt-[25px]">MarketPlace</p>
+          <p className=" text-[#CCCCCC] mt-[20px]">Rankings</p>
+          <p className=" text-[#CCCCCC] mt-[20px]">Connect a wallet</p>
         </div>
-        <div className="flex flex-col flex-1 max-w-[400px]">
-          <div className="flex flex-row text-[#CCCCCC] text-xl font-mono">
+        <div className="flex flex-col flex-1 lg:max-w-[400px] relative">
+          <div className="flex flex-row text-white text-xl font-mono">
             Join our weekly digest
           </div>
-          <p className="pt-6 text-[#CCCCCC] pr-20">
+          <p className="text-[#CCCCCC] pr-20 mt-[25px]">
             Get exclusive promotions & updates straight to your inbox.
           </p>
-          <div className="flex flex-row w-[390px] mt-5 bg-[#ffffff] rounded-2xl">
+          <div className=" flex flex-col mt-5 md:bg-[#ffffff] rounded-2xl gap-4 md:w-[390px] md:relative">
             <input
-              className="rounded-2xl px-6 outline-none"
-              placeholder="Email"
+              className="rounded-2xl px-4 placeholder-[#2B2B2B] outline-none w-full h-[46px] md:w-[230px] md:h-[60px]"
+              type="email"
+              // required
+              placeholder="Enter Your Email Address"
             />
-            <button className="px-8 py-3 bg-[#A259FF] rounded-2xl left-[-20px] relative  transform duration-500 hover:scale-95">
-              Subscribe
+            <button className="md:h-[60px] h-[46px] bg-[#A259FF] md:right-0 rounded-2xl md:absolute transform duration-500 hover:scale-95">
+              <h1 className="px-12 text-white">Subscribe</h1>
             </button>
           </div>
         </div>
       </div>
-      <div className="">
-        <hr className="mt-5" />
+      <div>
+        <hr className="mt-[30px]" />
       </div>
       {/* </div>  */}
       {/* <hr /> */}
       {/* <div className="grid grid-cols-1 divide-y bg-white mt-4"></div> */}
-      <p className="text-white font-mono">
+      <p className="text-white font-mono pt-5">
         Ⓒ NFT Market. Use this template freely.
       </p>
       <p className="text-white font-mono">Design By EmHoangDangThoOxy</p>

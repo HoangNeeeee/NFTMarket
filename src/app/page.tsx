@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { Trending } from "@/components";
+import { Trending, TrendingImage } from "@/components";
+import { Creator } from "@/components";
+import { Categories } from "@/components";
 export default function Page2() {
   return (
     <main>
@@ -15,7 +17,7 @@ export default function Page2() {
                 and sell art from more than 20k NFT artists.
               </h2>
               <a className="w-[220px]" href="http://localhost:3000/SignUp">
-                <button className="bg-[#A259FF] w-[220px] h-[60px] flex items-center justify-center font-sans font-semibold text-white rounded-2xl hover:scale-90 transition-all ease-in-out duration-300 bg-gradient-to-r from-[#9400FF] to-[#94FFFF]">
+                <button className="bg-[#A259FF] w-[220px] h-[60px] flex items-center justify-center font-sans font-semibold text-white rounded-2xl bg-gradient-to-l from-[#9400FF] to-[#94FFFF] hover:bg-gradient-to-r hover:from-[#9400FF] hover:to-[#94FFFF] transition delay-500">
                   <Image
                     className="mr-3"
                     src="RocketLaunch2.svg"
@@ -64,109 +66,37 @@ export default function Page2() {
         </div>
         <div className="justify-center flex mt-16 gap-10 ">
           <div>
-            <Trending
-              src1="/AnhAA1.svg"
-              src2="/AnhAA2.svg"
-              src3="/AnhAA3.svg"
-              src4="/AnhAA4.svg"
-              title1="ABCDE"
-              title2="ABCD"
+            <TrendingImage
+              src1="/PrimaryPhotoPlaceholder.svg"
+              src2="/SecondaryPhotoPlaceholderMeo.svg"
+              src3="/SecondaryPhotoPlaceholderGau.svg"
+              src4="/AvatarPlaceholderFox.svg"
+              title1="DSGN Animals"
+              title2="MrFox"
             />
           </div>
-          {/* <div className="text-white flex flex-col">ABC</div> */}
           <div>
-            <button className="hover:scale-90 transition-all ease-in-out duration-300">
-              <Image
-                src="/PrimaryPhotoPlaceholder1.svg"
-                alt="Anh"
-                width={330}
-                height={330}
+            <div>
+              <TrendingImage
+                src1="/PrimaryPhotoPlaceholder1.svg"
+                src2="/SecondaryPhotoPlaceholderNam1.svg"
+                src3="/SecondaryPhotoPlaceholderNam2.svg"
+                src4="/AssetNam.svg"
+                title1="Magic Mushrooms"
+                title2="Shroomie"
               />
-            </button>
-            <div className="mt-4 flex flex-row justify-between w-full">
-              <button className="h-[100px] w-[100px] rounded-2xl font-mono font-extrabold text-2xl">
-                <Image
-                  className="rounded-2xl hover:scale-90 transition-all ease-in-out duration-500"
-                  src="/SecondaryPhotoPlaceholderNam1.svg"
-                  alt="Anh"
-                  width={100}
-                  height={100}
-                />
-              </button>
-              <button>
-                <Image
-                  className="rounded-2xl hover:scale-90 transition-all ease-in-out duration-500"
-                  src="/SecondaryPhotoPlaceholderNam2.svg"
-                  alt="Anh"
-                  width={100}
-                  height={100}
-                />
-              </button>
-              <button className="bg-[#A259FF] h-[100px] w-[100px] rounded-2xl font-mono font-extrabold text-2xl hover:scale-90 transition-all ease-in-out duration-500">
-                1025+
-              </button>
-            </div>
-            <div className="mt-4">
-              <h1 className="text-xl font-semibold font-sans">
-                Magic Mushrooms
-              </h1>
-              <button className="mt-2 flex flex-row">
-                <Image
-                  src="/AssetNam.svg"
-                  alt="AvatarAnimals"
-                  width={24}
-                  height={24}
-                />
-                <p className="ml-2">Shroomie</p>
-              </button>
             </div>
           </div>
           <div>
-            <button>
-              <Image
-                className="rounded-2xl hover:scale-90 transition-all ease-in-out duration-500"
-                src="/PrimaryPhotoPlaceholder2.png"
-                alt="Anh"
-                width={330}
-                height={330}
+            <div>
+              <TrendingImage
+                src1="/PrimaryPhotoPlaceholderRobot.svg"
+                src2="/SecondaryPhotoPlaceholderRobot1.svg"
+                src3="/SecondaryPhotoPlaceholderRobot2.svg"
+                src4="/AvatarPlaceholderRobot.svg"
+                title1="Disco Machines"
+                title2="BeKinds2Robots"
               />
-            </button>
-            <div className="mt-4 flex justify-between w-full">
-              <button className="hover:scale-90 transition-all ease-in-out duration-500">
-                <Image
-                  className="rounded-2xl"
-                  src="/SecondaryPhotoPlaceholderRobot1.svg"
-                  alt="Anh"
-                  width={100}
-                  height={100}
-                />
-              </button>
-              <button className="hover:scale-90 transition-all ease-in-out duration-500">
-                <Image
-                  className="rounded-2xl"
-                  src="/SecondaryPhotoPlaceholderRobot2.svg"
-                  alt="Anh"
-                  width={100}
-                  height={100}
-                />
-              </button>
-              <button className="bg-[#A259FF] h-[100px] w-[100px] rounded-2xl font-mono font-extrabold text-2xl hover:scale-90 transition-all ease-in-out duration-500">
-                1025+
-              </button>
-            </div>
-            <div className="mt-4">
-              <h1 className="text-xl font-semibold font-sans">
-                Disco Machines
-              </h1>
-              <button className="mt-2 flex flex-row">
-                <Image
-                  src="/AvatarPlaceholderRobot.svg"
-                  alt="AvatarAnimals"
-                  width={24}
-                  height={24}
-                />
-                <p className="ml-2">BeKind2Robots</p>
-              </button>
             </div>
           </div>
         </div>
@@ -195,199 +125,79 @@ export default function Page2() {
           </div>
         </div>
         <div className="px-24 w-full">
-          <div className="mt-14 mb-20 grid grid-rows-3 gap-8">
-            <div className="flex justify-center gap-8">
-              <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                <Image src="Anh1.svg" alt="anh1" height={120} width={120} />
-                <div className="mt-5 text-center">
-                  <h1 className="font-sans text-xl font-semibold">
-                    Keepitrial
-                  </h1>
-                  <div className="flex">
-                    <h1 className="font-sans text-base text-[#858584]">
-                      Total Sales:
-                    </h1>
-                    <h1 className="ml-2 font-mono text-base">34.53 ETH</h1>
-                  </div>
-                </div>
-                <div className="bg-[#2B2B2B] w-7 h-7 absolute top-5 left-5 rounded-2xl flex items-center justify-center">
-                  <h1 className="w-[10] h-[22] font-mono text-[#858584]">1</h1>
-                </div>
-              </button>
-              <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                <Image src="Anh2.svg" alt="anh2" height={120} width={120} />
-                <div className="mt-5 text-center">
-                  <h1 className="font-sans text-xl font-semibold">DigiLab</h1>
-                  <div className="flex">
-                    <h1 className="font-sans text-base text-[#858584]">
-                      Total Sales:
-                    </h1>
-                    <h1 className="ml-2 font-mono text-base">34.53 ETH</h1>
-                  </div>
-                </div>
-                <div className="bg-[#2B2B2B] w-7 h-7 absolute top-5 left-5 rounded-2xl flex items-center justify-center">
-                  <h1 className="w-[10] h-[22] font-mono text-[#858584]">2</h1>
-                </div>
-              </button>
-              <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                <Image src="Anh3.svg" alt="anh3" height={120} width={120} />
-                <div className="mt-5 text-center">
-                  <h1 className="font-sans text-xl font-semibold">
-                    GravityOne
-                  </h1>
-                  <div className="flex">
-                    <h1 className="font-sans text-base text-[#858584]">
-                      Total Sales:
-                    </h1>
-                    <h1 className="ml-2 font-mono text-base">34.53 ETH</h1>
-                  </div>
-                </div>
-                <div className="bg-[#2B2B2B] w-7 h-7 absolute top-5 left-5 rounded-2xl flex items-center justify-center">
-                  <h1 className="w-[10] h-[22] font-mono text-[#858584]">3</h1>
-                </div>
-              </button>
-              <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                <Image src="Anh4.svg" alt="anh4" height={120} width={120} />
-                <div className="mt-5 text-center">
-                  <h1 className="font-sans text-xl font-semibold">Juanie</h1>
-                  <div className="flex">
-                    <h1 className="font-sans text-base text-[#858584]">
-                      Total Sales:
-                    </h1>
-                    <h1 className="ml-2 font-mono text-base">34.53 ETH</h1>
-                  </div>
-                </div>
-                <div className="absolute bg-[#2B2B2B] w-7 h-7 top-5 left-5 rounded-2xl flex items-center justify-center">
-                  <h1 className="w-[10] h-[22] font-mono text-[#858584]">4</h1>
-                </div>
-              </button>
-            </div>
-            <div className="flex justify-center gap-8">
-              <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                <Image src="Anh5.svg" alt="anh5" height={120} width={120} />
-                <div className="mt-5 text-center">
-                  <h1 className="font-sans text-xl font-semibold">BlueWhale</h1>
-                  <div className="flex">
-                    <h1 className="font-sans text-base text-[#858584]">
-                      Total Sales:
-                    </h1>
-                    <h1 className="ml-2 font-mono text-base">34.53 ETH</h1>
-                  </div>
-                </div>
-                <div className="bg-[#2B2B2B] w-7 h-7 absolute top-5 left-5 rounded-2xl flex items-center justify-center">
-                  <h1 className="w-[10] h-[22] font-mono text-[#858584]">5</h1>
-                </div>
-              </button>
-              <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                <Image src="Anh6.svg" alt="anh6" height={120} width={120} />
-                <div className="mt-5 text-center">
-                  <h1 className="font-sans text-xl font-semibold">Mr Fox</h1>
-                  <div className="flex">
-                    <h1 className="font-sans text-base text-[#858584]">
-                      Total Sales:
-                    </h1>
-                    <h1 className="ml-2 font-mono text-base">34.53 ETH</h1>
-                  </div>
-                </div>
-                <div className="bg-[#2B2B2B] w-7 h-7 absolute top-5 left-5 rounded-2xl flex items-center justify-center">
-                  <h1 className="w-[10] h-[22] font-mono text-[#858584]">6</h1>
-                </div>
-              </button>
-              <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                <Image src="Anh7.svg" alt="anh7" height={120} width={120} />
-                <div className="mt-5 text-center">
-                  <h1 className="font-sans text-xl font-semibold">Shroomie</h1>
-                  <div className="flex">
-                    <h1 className="font-sans text-base text-[#858584]">
-                      Total Sales:
-                    </h1>
-                    <h1 className="ml-2 font-mono text-base">34.53 ETH</h1>
-                  </div>
-                </div>
-                <div className="bg-[#2B2B2B] w-7 h-7 absolute top-5 left-5 rounded-2xl flex items-center justify-center">
-                  <h1 className="w-[10] h-[22] font-mono text-[#858584]">7</h1>
-                </div>
-              </button>
-              <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                <Image src="Anh8.svg" alt="anh8" height={120} width={120} />
-                <div className="mt-5 text-center">
-                  <h1 className="font-sans text-xl font-semibold">Robotica</h1>
-                  <div className="flex">
-                    <h1 className="font-sans text-base text-[#858584]">
-                      Total Sales:
-                    </h1>
-                    <h1 className="ml-2 font-mono text-base">34.53 ETH</h1>
-                  </div>
-                </div>
-                <div className="bg-[#2B2B2B] w-7 h-7 absolute top-5 left-5 rounded-2xl flex items-center justify-center">
-                  <h1 className="w-[10] h-[22] font-mono text-[#858584]">8</h1>
-                </div>
-              </button>
-            </div>
-            <div className="flex justify-center gap-8">
-              <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                <Image src="Anh9.svg" alt="anh9" height={120} width={120} />
-                <div className="mt-5 text-center">
-                  <h1 className="font-sans text-xl font-semibold">
-                    RustyRobot
-                  </h1>
-                  <div className="flex">
-                    <h1 className="font-sans text-base text-[#858584]">
-                      Total Sales:
-                    </h1>
-                    <h1 className="ml-2 font-mono text-base">34.53 ETH</h1>
-                  </div>
-                </div>
-                <div className="bg-[#2B2B2B] w-7 h-7 absolute top-5 left-5 rounded-2xl flex items-center justify-center">
-                  <h1 className="w-[10] h-[22] font-mono text-[#858584]">9</h1>
-                </div>
-              </button>
-              <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                <Image src="Anh10.svg" alt="anh10" height={120} width={120} />
-                <div className="mt-5 text-center">
-                  <h1 className="font-sans text-xl font-semibold">Animakid</h1>
-                  <div className="flex">
-                    <h1 className="font-sans text-base text-[#858584]">
-                      Total Sales:
-                    </h1>
-                    <h1 className="ml-2 font-mono text-base">34.53 ETH</h1>
-                  </div>
-                </div>
-                <div className="bg-[#2B2B2B] w-7 h-7 absolute top-5 left-5 rounded-2xl flex items-center justify-center">
-                  <h1 className="w-[10] h-[22] font-mono text-[#858584]">10</h1>
-                </div>
-              </button>
-              <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                <Image src="Anh11.svg" alt="anh11" height={120} width={120} />
-                <div className="mt-5 text-center">
-                  <h1 className="font-sans text-xl font-semibold">Dotgu</h1>
-                  <div className="flex">
-                    <h1 className="font-sans text-base text-[#858584]">
-                      Total Sales:
-                    </h1>
-                    <h1 className="ml-2 font-mono text-base">34.53 ETH</h1>
-                  </div>
-                </div>
-                <div className="bg-[#2B2B2B] w-7 h-7 absolute top-5 left-5 rounded-2xl flex items-center justify-center">
-                  <h1 className="w-[10] h-[22] font-mono text-[#858584]">11</h1>
-                </div>
-              </button>
-              <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                <Image src="Anh12.svg" alt="anh12" height={120} width={120} />
-                <div className="mt-5 text-center">
-                  <h1 className="font-sans text-xl font-semibold">Ghiblier</h1>
-                  <div className="flex">
-                    <h1 className="font-sans text-base text-[#858584]">
-                      Total Sales:
-                    </h1>
-                    <h1 className="ml-2 font-mono text-base">34.53 ETH</h1>
-                  </div>
-                </div>
-                <div className="bg-[#2B2B2B] w-7 h-7 absolute top-5 left-5 rounded-2xl flex items-center justify-center">
-                  <h1 className="w-[10] h-[22] font-mono text-[#858584]">12</h1>
-                </div>
-              </button>
-            </div>
+          <div className="flex flex-wrap justify-center gap-8 mt-14 mb-20">
+            <Creator
+              src1="Anh1.svg"
+              title1="1"
+              title2="Keepitreal"
+              title3="34.53 ETH"
+            />
+            <Creator
+              src1="Anh2.svg"
+              title1="2"
+              title2="DigiLab"
+              title3="34.53 ETH"
+            />
+            <Creator
+              src1="Anh3.svg"
+              title1="3"
+              title2="GravityOne"
+              title3="34.53 ETH"
+            />
+            <Creator
+              src1="Anh4.svg"
+              title1="4"
+              title2="Juanie"
+              title3="34.53 ETH"
+            />
+            <Creator
+              src1="Anh5.svg"
+              title1="5"
+              title2="BlueWhale"
+              title3="34.53 ETH"
+            />
+            <Creator
+              src1="Anh6.svg"
+              title1="6"
+              title2="Mr Fox"
+              title3="34.53 ETH"
+            />
+            <Creator
+              src1="Anh7.svg"
+              title1="7"
+              title2="Shroomie"
+              title3="34.53 ETH"
+            />
+            <Creator
+              src1="Anh8.svg"
+              title1="8"
+              title2="Robotica"
+              title3="34.53 ETH"
+            />
+            <Creator
+              src1="Anh9.svg"
+              title1="9"
+              title2="RustyRobot"
+              title3="34.53 ETH"
+            />
+            <Creator
+              src1="Anh10.svg"
+              title1="10"
+              title2="Animakid"
+              title3="34.53 ETH"
+            />
+            <Creator
+              src1="Anh11.svg"
+              title1="11"
+              title2="Dotgu"
+              title3="34.53 ETH"
+            />
+            <Creator
+              src1="Anh12.svg"
+              title1="12"
+              title2="Ghiblier"
+              title3="34.53 ETH"
+            />
           </div>
         </div>
       </div>
@@ -395,162 +205,28 @@ export default function Page2() {
         <h1 className="text-white mb-14 text-4xl font-semibold font-sans">
           Browse Categories
         </h1>
-        <div className="mb-20 text-white w-full grid grid-rows-2 gap-8">
-          <div className="flex justify-center gap-8">
-            <button className="w-[240px] h-[308px] rounded-2xl overflow-hidden relative hover:scale-90 transition-all ease-in-out duration-500">
-              <Image
-                className="blur-sm"
-                src="AnhA1.svg"
-                alt="Anh1"
-                width={240}
-                height={240}
-              />
-              <Image
-                className="absolute top-[70px] left-1/2 -translate-x-1/2"
-                src="AnhAA1.svg"
-                alt="Anh1"
-                width={100}
-                height={100}
-              />
-              <h1 className="px-5 py-5 bg-[#3B3B3B] text-left font-semibold text-xl">
-                Art
-              </h1>
-            </button>
-            <button className="w-[240px] h-[308px] rounded-2xl overflow-hidden relative hover:scale-90 transition-all ease-in-out duration-500">
-              <Image
-                className="blur-sm"
-                src="AnhA2.svg"
-                alt="Anh1"
-                width={240}
-                height={240}
-              />
-              <Image
-                className="absolute top-[70px] left-1/2 -translate-x-1/2"
-                src="AnhAA2.svg"
-                alt="Anh1"
-                width={100}
-                height={100}
-              />
-              <h1 className="px-5 py-5 bg-[#3B3B3B] text-left font-semibold text-xl">
-                Collectibles
-              </h1>
-            </button>
-            <button className="w-[240px] h-[308px] rounded-2xl overflow-hidden relative hover:scale-90 transition-all ease-in-out duration-500">
-              <Image
-                className="blur-sm"
-                src="AnhA3.svg"
-                alt="Anh1"
-                width={240}
-                height={240}
-              />
-              <Image
-                className="absolute top-[70px] left-1/2 -translate-x-1/2"
-                src="AnhAA3.svg"
-                alt="Anh1"
-                width={100}
-                height={100}
-              />
-              <h1 className="px-5 py-5 bg-[#3B3B3B] text-left font-semibold text-xl">
-                Music
-              </h1>
-            </button>
-            <button className="w-[240px] h-[308px] rounded-2xl overflow-hidden relative hover:scale-90 transition-all ease-in-out duration-500">
-              <Image
-                className="blur-sm"
-                src="AnhA4.svg"
-                alt="Anh1"
-                width={240}
-                height={240}
-              />
-              <Image
-                className="absolute top-[70px] left-1/2 -translate-x-1/2"
-                src="AnhAA4.svg"
-                alt="Anh1"
-                width={100}
-                height={100}
-              />
-              <h1 className="px-5 py-5 bg-[#3B3B3B] text-left font-semibold text-xl">
-                Photography
-              </h1>
-            </button>
-          </div>
-          <div className="flex justify-center gap-8">
-            <button className="w-[240px] h-[308px] rounded-2xl overflow-hidden relative hover:scale-90 transition-all ease-in-out duration-500">
-              <Image
-                className="blur-sm"
-                src="AnhA5.svg"
-                alt="Anh1"
-                width={240}
-                height={240}
-              />
-              <Image
-                className="absolute top-[70px] left-1/2 -translate-x-1/2"
-                src="AnhAA5.svg"
-                alt="Anh1"
-                width={100}
-                height={100}
-              />
-              <h1 className="px-5 py-5 bg-[#3B3B3B] text-left font-semibold text-xl">
-                Video
-              </h1>
-            </button>
-            <button className="w-[240px] h-[308px] rounded-2xl overflow-hidden relative hover:scale-90 transition-all ease-in-out duration-500">
-              <Image
-                className="blur-sm"
-                src="AnhA6.svg"
-                alt="Anh1"
-                width={240}
-                height={240}
-              />
-              <Image
-                className="absolute top-[70px] left-1/2 -translate-x-1/2"
-                src="AnhAA6.svg"
-                alt="Anh1"
-                width={100}
-                height={100}
-              />
-              <h1 className="px-5 py-5 bg-[#3B3B3B] text-left font-semibold text-xl">
-                Utility
-              </h1>
-            </button>
-            <button className="w-[240px] h-[308px] rounded-2xl overflow-hidden relative hover:scale-90 transition-all ease-in-out duration-500">
-              <Image
-                className="blur-sm"
-                src="AnhA7.svg"
-                alt="Anh1"
-                width={240}
-                height={240}
-              />
-              <Image
-                className="absolute top-[70px] left-1/2 -translate-x-1/2"
-                src="AnhAA7.svg"
-                alt="Anh1"
-                width={100}
-                height={100}
-              />
-              <h1 className="px-5 py-5 bg-[#3B3B3B] text-left font-semibold text-xl">
-                Sport
-              </h1>
-            </button>
-            <button className="w-[240px] h-[308px] rounded-2xl overflow-hidden relative hover:scale-90 transition-all ease-in-out duration-500">
-              <Image
-                className="blur-sm"
-                src="AnhA8.svg"
-                alt="Anh1"
-                width={240}
-                height={240}
-              />
-              <Image
-                className="absolute top-[70px] left-1/2 -translate-x-1/2"
-                src="AnhAA8.svg"
-                alt="Anh1"
-                width={100}
-                height={100}
-              />
-              <h1 className="px-5 py-5 bg-[#3B3B3B] text-left font-semibold text-xl">
-                Virtual Worlds
-              </h1>
-            </button>
+        <div className="mb-20 text-white w-full">
+          <div className="grid grid-cols-4 justify-center gap-8">
+            <Categories src1="AnhA1.svg" src2="AnhAA1.svg" title="Art" />
+            <Categories
+              src1="AnhA2.svg"
+              src2="AnhAA2.svg"
+              title="Collectibles"
+            />
+            <Categories src1="AnhA3.svg" src2="AnhAA3.svg" title="Music" />
+            <Categories
+              src1="AnhA4.svg"
+              src2="AnhAA4.svg"
+              title="Photography"
+            />
+            <Categories src1="AnhA5.svg" src2="AnhAA5.svg" title="Video" />
+            <Categories src1="AnhA6.svg" src2="AnhAA6.svg" title="Utility" />
+            <Categories src1="AnhA7.svg" src2="AnhAA7.svg" title="Sport" />
+            <Categories
+              src1="AnhA8.svg"
+              src2="AnhAA8.svg"
+              title="Virtual Worlds"
+            />
           </div>
         </div>
       </div>
@@ -704,6 +380,108 @@ export default function Page2() {
           />
         </div>
         <Image className="" src="NFTHighlight.svg" alt="anh" fill />
+      </div>
+      <div className="px-[30px] md:px-[72px] lg:px-[115px] text-white">
+        <h1 className="font-sans text-[28px] lg:text-[38px] font-semibold mt-[40px]">
+          How It Works
+        </h1>
+        <h1 className="font-sans text-[22px] mb-[48px]">
+          Find Out How To Get Started
+        </h1>
+        <div className="flex flex-col md:flex-row gap-[30px] mb-[80px]">
+          <div className="flex flex-row md:flex-col items-center px-[20px] py-[20px] md:px-[20px] md:pb-[30px] md:pt-[10px] lg:px-[30px] bg-[#3B3B3B] h-auto md:h-[440px] w-full md:w-1/3 rounded-[20px]">
+            <div className="mt-[10px]">
+              <Image
+                className="flex"
+                src="Icon1.svg"
+                alt=""
+                width={250}
+                height={250}
+              />
+            </div>
+            <div>
+              <h1 className="font-sans text-[22px] font-semibold ">
+                Setup Your Wallet
+              </h1>
+              <h1 className="font-sans text-[16px]">
+                Set up your wallet of choice. Connect it to the Animarket by
+                clicking the wallet icon in the top right corner.
+              </h1>
+            </div>
+          </div>
+          <div className="flex flex-row md:flex-col items-center px-[20px] py-[20px] md:px-[20px] md:pb-[30px] md:pt-[10px] lg:px-[30px] bg-[#3B3B3B] h-auto md:h-[440px] w-full md:w-1/3 rounded-[20px]">
+            <div className="mt-[10px]">
+              <Image
+                className="flex "
+                src="Icon2.svg"
+                alt=""
+                width={250}
+                height={250}
+              />
+            </div>
+            <div>
+              <h1 className="font-sans text-[22px] font-semibold ">
+                Create Collection
+              </h1>
+              <h1 className="font-sans text-[16px]">
+                Upload your work and setup your collection. Add a description,
+                social links and floor price.
+              </h1>
+            </div>
+          </div>
+          <div className="flex flex-row md:flex-col items-center px-[20px] py-[20px] md:px-[20px] md:pb-[30px] md:pt-[10px] lg:px-[30px] bg-[#3B3B3B] h-auto md:h-[440px] w-full md:w-1/3 rounded-[20px]">
+            <div className="mt-[10px]">
+              <Image
+                className="flex "
+                src="Icon3.svg"
+                alt=""
+                width={250}
+                height={250}
+              />
+            </div>
+            <div>
+              <h1 className="font-sans text-[22px] font-semibold ">
+                Start Earning
+              </h1>
+              <h1 className="font-sans text-[16px]">
+                Choose between auctions and fixed-price listings. Start earning
+                by selling your NFTs or trading others.
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center items-center px-[30px] md:px-[72px] lg:px-[115px] ">
+        <div className="flex justify-center md:bg-[#3B3B3B] gap-[80px] w-full mb-[80px] rounded-[20px] md:px-[40px] md:py-[40px] lg:px-[60px] lg:py-[60px] flex-col md:flex-row">
+          <div className="flex object-cover justify-center">
+            <Image
+              className="md:w-[100%]  rounded-2xl flex flex-col w-[100%] relative md:h-auto object-cover h-[310px]"
+              src="AstronautPhoto.svg"
+              alt=""
+              width={425}
+              height={310}
+            />
+          </div>
+          <div className="">
+            <h1 className="text-[28px] lg:text-[38px] font-sans font-semibold text-[#FFFFFF]">
+              Join Our Weekly Digest
+            </h1>
+            <h1 className="text-[22px] mb-[40px] font-sans text-[#FFFFFF]">
+              Get exclusive promotions & updates straight to your inbox.
+            </h1>
+            <div className=" flex flex-col mt-5 md:bg-[#ffffff] rounded-2xl gap-4 md:w-[390px] md:relative">
+              <input
+                className="rounded-2xl px-4 placeholder-[#2B2B2B] outline-none w-full h-[46px] md:w-[230px] md:h-[60px]"
+                type="email"
+                // required
+                placeholder="Enter Your Email Address"
+              />
+              <button className="md:h-[60px] h-[46px] bg-[#A259FF] md:right-0 rounded-2xl md:absolute transform duration-500 hover:scale-95">
+                <h1 className="px-12 text-white">Subscribe</h1>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
   );

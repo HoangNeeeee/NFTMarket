@@ -7,7 +7,7 @@ export function Header() {
     marginRight: 15,
   };
   return (
-    <header className="py-5 px-12 flex flex-row bg-[#2B2B2B] justify-between">
+    <header className="py-1 md:py-3 lg:py-5 px-7 flex flex-row bg-[#3B3B3B] justify-between">
       <div className="flex flex-row items-center">
         <Image
           className="mr-4"
@@ -19,40 +19,44 @@ export function Header() {
         />
         <button>
           <a href="http://localhost:3000">
-            <p className="text-white text-3xl font-mono">NFT Marketplace</p>
+            <p className="text-white text-xl lg:text-3xl font-mono">
+              NFT Marketplace
+            </p>
           </a>
         </button>
       </div>
-      <div className="flex flex-col md:flex-row items-center ">
+      <div className="hidden lg:flex flex-col md:flex-row items-center ">
         <button>
-          <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
-            MarketPlace
-          </p>
+          <a href="/MarketPlace">
+            <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
+              MarketPlace
+            </p>
+          </a>
         </button>
         <button>
-          <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
-            Ranking
-          </p>
+          <a href="/Ranking">
+            <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
+              Ranking
+            </p>
+          </a>
         </button>
         <button>
-          <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
-            Collect A Wallet
-          </p>
+          <a href="/Wallet">
+            <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
+              Collect A Wallet
+            </p>
+          </a>
         </button>
-        <button className="bg-violet-600 py-4 px-7 text-white font-sans font-semibold rounded-3xl flex flex-row items-center hover:scale-90 transition-all ease-in-out duration-500 bg-gradient-to-r from-[#00ECF5] to-[#FFD1E7]">
-          {/* <Image
-            style={{
-              fill: "#fff",
-            }}
-            src={UserIcon}
-            alt="usericon"
-            width={20}
-            height={20}
-            className=" mr-4"
-          /> */}
+        <button className="bg-[#A259FF] gap-2 py-4 px-7 text-white font-sans font-semibold rounded-3xl flex flex-row items-center hover:scale-90 transition-all ease-in-out duration-500">
+          <Image src="/user.svg" alt="" width={20} height={20} />
           <a href="http://localhost:3000/SignUp">
             <p className="">Sign Up</p>
           </a>
+        </button>
+      </div>
+      <div className="flex lg:hidden">
+        <button>
+          <Image src="/menubar.svg" width={30} height={30} alt="" />
         </button>
       </div>
     </header>

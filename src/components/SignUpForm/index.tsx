@@ -12,8 +12,11 @@ import { useForm } from "react-hook-form";
 
 const schema = yup
   .object({
-    Username: yup.string().required(),
-    Email: yup.string().email("Invalid email format").required("Required!"),
+    Username: yup.string().required("Please enter your username"),
+    Email: yup
+      .string()
+      .email("Invalid email format")
+      .required("Please enter your email."),
     Password: yup
       .string()
       .required()
@@ -36,26 +39,26 @@ export const SignUpForm = () => {
   const onSubmit = (data: any) => console.log(data);
   return (
     <div className="mt-10 mb-20 flex flex-col w-80">
-      <div className="bg-white rounded-2xl flex flex-row px-4 h-11 justify-center">
+      <div className="bg-white w-full rounded-2xl flex flex-row px-4 h-11 justify-center">
         <Image src={UserIcon} alt="user-icon" width={20} height={20} />
         <WSInput placeholder="Username" {...register("Username")} />
       </div>
 
       <p className="text-red-500">{errors.Username?.message}</p>
 
-      <div className="bg-white rounded-2xl flex flex-row px-4 h-11 justify-center mt-4">
+      <div className="bg-white w-full rounded-2xl flex flex-row px-4 h-11 justify-center mt-4">
         <Image src={Hopthu} alt="user-icon" width={20} height={20} />
         <WSInput placeholder="Email Address" {...register("Email")} />
       </div>
       <p className="text-red-500">{errors.Email?.message}</p>
 
-      <div className="bg-white rounded-2xl flex flex-row px-4 h-11 justify-center mt-4">
+      <div className="bg-white w-full rounded-2xl flex flex-row md:px-4 px-6 h-11 justify-center mt-4">
         <Image src={KeyIcon} alt="user-icon" width={20} height={20} />
         <WSInput placeholder="Password" password {...register("Password")} />
       </div>
       <p className="text-red-500">{errors.Password?.message}</p>
 
-      <div className="bg-white rounded-2xl flex flex-row px-4 h-11 justify-center mt-4">
+      <div className="bg-white w-full rounded-2xl flex flex-row px-4 h-11 justify-center mt-4">
         <Image src={KeyIcon} alt="user-icon" width={20} height={20} />
         <WSInput
           placeholder="Comfirm Password"
