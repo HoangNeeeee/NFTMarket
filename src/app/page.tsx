@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Trending, TrendingImage } from "@/components";
+import { TrendingImage } from "@/components";
 import { Creator } from "@/components";
 import { Categories } from "@/components";
 export default function Page2() {
