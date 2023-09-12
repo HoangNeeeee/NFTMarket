@@ -49,7 +49,7 @@ export function Header() {
         </button>
         <button className="bg-[#A259FF] gap-2 py-4 px-7 text-white font-sans font-semibold rounded-3xl flex flex-row items-center hover:scale-90 transition-all ease-in-out duration-500">
           <Image src="/user.svg" alt="" width={20} height={20} />
-          <a href="http://localhost:3000/SignUp">
+          <a href="/SignUp">
             <p className="">Sign Up</p>
           </a>
         </button>
