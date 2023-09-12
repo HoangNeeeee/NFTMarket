@@ -18,7 +18,7 @@ export function Header() {
           height={30}
         />
         <button>
-          <a href="http://localhost:3000">
+          <a href="/">
             <p className="text-white text-xl lg:text-3xl font-mono">
               NFT Marketplace
             </p>
