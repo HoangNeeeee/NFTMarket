@@ -19,7 +19,7 @@ export function TrendingImage(props: {
           height={330}
         />
       </button>
-      <div className="mt-4 flex justify-between w-full">
+      <div className="mt-4 flex justify-between w-full gap-[15px]">
         <button className="hover:scale-90 transition-all ease-in-out duration-500">
           <Image
             className="rounded-2xl"
@@ -38,7 +38,7 @@ export function TrendingImage(props: {
             height={100}
           />
         </button>
-        <button className="bg-[#A259FF] h-[100px] w-[100px] rounded-2xl font-mono font-extrabold text-2xl hover:scale-90 transition-all ease-in-out duration-500">
+        <button className="bg-[#A259FF] h-auto w-[100px] rounded-2xl font-mono font-extrabold sm:text-[16px] md:text-[20px] hover:scale-90 transition-all ease-in-out duration-500">
           1025+
         </button>
       </div>

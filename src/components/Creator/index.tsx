@@ -1,24 +1,30 @@
 import Image from "next/image";
 export function Creator(props: {
-  src1: string;
-  title1: string;
-  title2: string;
-  title3: string;
+  imageSrc: string;
+  indexNumber: string;
+  title: string;
+  price: string;
 }) {
   return (
     <div>
-      <button className="relative bg-[#3B3B3B] text-white w-[240px] h-[238px] px-5 py-5 rounded-2xl flex flex-col justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-        <Image src={props.src1} alt="anh1" height={120} width={120} />
-        <div className="bg-[#2B2B2B] w-7 h-7 absolute top-5 left-5 rounded-2xl flex items-center justify-center">
-          <h1 className="w-[10] h-[22] font-mono text-[#858584]">
-            {props.title1}
-          </h1>
+      <button className="bg-[#3B3B3B] text-white w-full lg:h-[238px] px-5 py-5 rounded-2xl flex lg:flex-col xsm:flex-row justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
+        <div className="relative">
+          <img
+            className="flex xsm:h-[60px] xsm:w-[60px] lg:h-[120px] lg:w-[120px]"
+            src={props.imageSrc}
+            alt="anh1"
+          />
+          <div className="bg-[#2B2B2B] w-7 h-7 absolute xsm:-top-2 xsm:-left-2 md:-left-1 md:-top-1 lg:top-0 lg:left-0 rounded-2xl flex items-center justify-center">
+            <h1 className="w-[10] h-[22] font-mono text-[#858584]">
+              {props.indexNumber}
+            </h1>
+          </div>
         </div>
         <div className="mt-5 text-center">
-          <h1 className="font-sans text-xl font-semibold">{props.title2}</h1>
+          <h1 className="font-sans text-xl font-semibold">{props.title}</h1>
           <div className="flex">
             <h1 className="font-sans text-base text-[#858584]">Total Sales:</h1>
-            <h1 className="ml-2 font-mono text-base">{props.title3}</h1>
+            <h1 className="ml-2 font-mono text-base">{props.price}</h1>
           </div>
         </div>
       </button>
