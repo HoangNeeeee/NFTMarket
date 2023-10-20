@@ -10,37 +10,37 @@ const customParseFormat = require("dayjs/plugin/customParseFormat")
 dayjs.extend(customParseFormat)
 dayjs.extend(relativeTime)
 
-const destination = dayjs("05/10/2023 18:40:40", "DD/MM/YYYY HH:mm:ss")
+const destination = dayjs("20/10/2023 17:00:00", "DD/MM/YYYY HH:mm:ss")
 export const Mashroom = () => {
     const [dateDiffToSecond, setDateDiffToSecond] = useState()
 
-    // useEffect(() => {
-    //     setInterval(() => {
-    //         setDateDiffToSecond(destination.diff(dayjs(), "s"))
-    //     }, 1000)
-    // }, [])
+    useEffect(() => {
+        setInterval(() => {
+            setDateDiffToSecond(destination.diff(dayjs(), "s"))
+        }, 1000)
+    }, [])
 
-    // const transformSecondToHours = (type) => {
-    //     switch (type) {
-    //         case "hour":
-    //             return Math.floor(dateDiffToSecond / 3600)
-    //         case "minute":
-    //             return Math.floor((dateDiffToSecond % 3600) / 60)
-    //         case "second":
-    //             return (dateDiffToSecond % 3600) % 60
-    //     }
-    // }
+    const transformSecondToHours = (type) => {
+        switch (type) {
+            case "hour":
+                return Math.floor(dateDiffToSecond / 3600)
+            case "minute":
+                return Math.floor((dateDiffToSecond % 3600) / 60)
+            case "second":
+                return (dateDiffToSecond % 3600) % 60
+        }
+    }
 
     return (
         <div className="relative w-full h-[calc(0.5*100vw)]">
-            {/* <div className="relative bg-gradient-to-b from-white to-purple-600">
-        <Image
-          className="absolute object-cover"
-          src="NFTHighlight.svg"
-          alt="anh"
-          fill
-        />
-        </div> */}
+            <div className="relative bg-gradient-to-b from-white to-purple-600">
+                <Image
+                    className="absolute object-cover"
+                    src="NFTHighlight.svg"
+                    alt="anh"
+                    fill
+                />
+            </div>
             <Image
                 src="NFTHighlight.svg"
                 alt="anh"
@@ -77,7 +77,7 @@ export const Mashroom = () => {
                     <div className="flex gap-[10px]">
                         <div className="flex flex-col">
                             <h1 className="font-mono text-[38px] font-bold">
-                                {/* {transformSecondToHours("hour")} */}
+                                {transformSecondToHours("hour")}
                             </h1>
                             <h1>Hours</h1>
                         </div>
@@ -88,7 +88,7 @@ export const Mashroom = () => {
                         </div>
                         <div className="flex flex-col">
                             <h1 className="font-mono text-[38px] font-bold">
-                                {/* {transformSecondToHours("minute")} */}
+                                {transformSecondToHours("minute")}
                             </h1>
                             <h1>Minutes</h1>
                         </div>
@@ -99,7 +99,7 @@ export const Mashroom = () => {
                         </div>
                         <div className="flex flex-col">
                             <h1 className="font-mono text-[38px] font-bold">
-                                {/* {transformSecondToHours("second")} */}
+                                {transformSecondToHours("second")}
                             </h1>
                             <h1>Seconds</h1>
                         </div>
