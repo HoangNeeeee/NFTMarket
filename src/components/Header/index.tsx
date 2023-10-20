@@ -47,14 +47,14 @@ export function Header() {
                         </a>
                     </button>
                     <button>
-                        <a href="/ranking">
+                        <a href="/Ranking">
                             <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
                                 Ranking
                             </p>
                         </a>
                     </button>
                     <button>
-                        <a href="/wallet">
+                        <a href="/Wallet">
                             <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
                                 Collect A Wallet
                             </p>
