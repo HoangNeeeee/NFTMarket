@@ -4,7 +4,7 @@ import { Discover, NMButton } from "@/components";
 
 export const DiscoverNFT = () => {
   return (
-    <div className="px-24 pt-20 pb-20">
+    <div className="px-24 pt-20 pb-20 ">
       <div className="flex flex-row text-white justify-between mb-14">
         <div>
           <h1 className="text-4xl w-full font-sans font-semibold capitalize ">

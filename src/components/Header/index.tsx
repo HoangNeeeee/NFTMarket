@@ -40,28 +40,28 @@ export function Header() {
             {breakpoint.xl && (
                 <div className={"flex flex-col md:flex-row items-center"}>
                     <button>
-                        <a href="/MarketPlace">
+                        <a href="/market-place">
                             <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
                                 MarketPlace
                             </p>
                         </a>
                     </button>
                     <button>
-                        <a href="/Ranking">
+                        <a href="/ranking">
                             <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
                                 Ranking
                             </p>
                         </a>
                     </button>
                     <button>
-                        <a href="/Wallet">
+                        <a href="/wallet">
                             <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
                                 Collect A Wallet
                             </p>
                         </a>
                     </button>
                     <button className="bg-[#A259FF] gap-2 py-4 px-7 text-white font-sans font-semibold rounded-3xl flex flex-row items-center hover:scale-90 transition-all ease-in-out duration-500">
-                        <a href="/SignUp">
+                        <a href="/sign-up">
                             <div className="flex">
                                 <Image
                                     src="/user.svg"
