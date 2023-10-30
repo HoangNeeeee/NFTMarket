@@ -65,7 +65,7 @@ const creators = [
         title3: "34.53 ETH",
     },
 ]
-export default function ABCD() {
+export function TopCreator() {
     const [creator, setCreator] = useState(creators)
 
     const handleClick = (id: number) => {
