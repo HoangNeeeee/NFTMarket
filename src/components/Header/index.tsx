@@ -4,6 +4,7 @@ import { useBreakpoint } from "@/hooks"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
+import { Hamburger } from "../HamburgerBar"
 export function Header() {
     const linkStyle = {
         marginRight: 15,
@@ -47,14 +48,14 @@ export function Header() {
                         </a>
                     </button>
                     <button>
-                        <a href="/Ranking">
+                        <a href="/ranking">
                             <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
                                 Ranking
                             </p>
                         </a>
                     </button>
                     <button>
-                        <a href="/Wallet">
+                        <a href="/wallet">
                             <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
                                 Collect A Wallet
                             </p>
@@ -78,12 +79,13 @@ export function Header() {
             {!breakpoint.xl && (
                 <div className="flex">
                     <button>
-                        <Image
+                        {/* <Image
                             src="/menubar.svg"
                             width={30}
                             height={30}
                             alt=""
-                        />
+                        /> */}
+                        <Hamburger />
                     </button>
                 </div>
             )}
