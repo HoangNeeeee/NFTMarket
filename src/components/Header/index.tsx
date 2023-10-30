@@ -4,18 +4,18 @@ import { useBreakpoint } from "@/hooks"
 import Image from "next/image"
 import Link from "next/link"
 import { useState } from "react"
-import { Hamburger } from "../HamburgerBar"
+// import { Hamburger } from "../HamburgerBar"
 export function Header() {
     const linkStyle = {
         marginRight: 15,
     }
-    function MenuBar() {
-        const [isOpen, setIsOpen] = useState(false)
+    // function MenuBar() {
+    //     const [isOpen, setIsOpen] = useState(false)
 
-        const toggleMenu = () => {
-            setIsOpen((open) => !open)
-        }
-    }
+    //     const toggleMenu = () => {
+    //         setIsOpen((open) => !open)
+    //     }
+    // }
 
     const breakpoint = useBreakpoint()
 
@@ -85,7 +85,7 @@ export function Header() {
                             height={30}
                             alt=""
                         /> */}
-                        <Hamburger />
+                        {/* <Hamburger /> */}
                     </button>
                 </div>
             )}
