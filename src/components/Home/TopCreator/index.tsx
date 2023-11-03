@@ -119,7 +119,7 @@ export function TopCreator() {
                             handleItemClick={handleClick}
                         />
                     ))}
-                </div>
+                </div> 
                 <div className="flex justify-center gap-60">
                     <button
                         className="text-white text-lg w-[100px] mt-10 bg-pink-600 rounded-2xl"
