@@ -3,7 +3,7 @@ import Image from "next/image";
 import { NMButton } from "@/components/NMButton";
 export const HomeFooter = () => {
   return (
-    <div className="flex justify-center items-center px-[30px] md:px-[72px] lg:px-[115px] ">
+    <div className="flex justify-center items-center pt- px-[30px] md:px-[72px] lg:px-[115px] ">
       <div className="flex justify-center md:bg-[#3B3B3B] gap-[80px] w-full mb-[80px] rounded-[20px] md:px-[40px] md:py-[40px] lg:px-[60px] lg:py-[60px] flex-col md:flex-row">
         <div className="flex object-cover justify-center">
           <Image

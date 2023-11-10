@@ -3,7 +3,7 @@ export default function ranking() {
     const ranking = [
         {
             imageSrc: "Anh1.svg",
-            artistName: "Jaydon Ekstrom",
+            artistName: "Marcus Saris",
             changePercent: "10",
             quantityInStock: "10",
             quantitySold: "10",
@@ -66,21 +66,21 @@ export default function ranking() {
         },
         {
             imageSrc: "Anh10.svg",
-            artistName: "Kianna Stanton",
+            artistName: "Angel Lubin",
             changePercent: "10",
             quantityInStock: "10",
             quantitySold: "10",
         },
         {
             imageSrc: "Anh11.svg",
-            artistName: "Kianna Stanton",
+            artistName: "Allison Torff",
             changePercent: "10",
             quantityInStock: "10",
             quantitySold: "10",
         },
         {
             imageSrc: "Anh12.svg",
-            artistName: "Kianna Stanton",
+            artistName: "Davis Workman",
             changePercent: "10",
             quantityInStock: "10",
             quantitySold: "10",
@@ -88,7 +88,7 @@ export default function ranking() {
     ]
     return (
         <main className="mb-[20px]">
-            <div className="px-[115px] py-[80px]">
+            <div className="lg:px-[115px] lg:py-[80px] xsm:px-[30px] xsm:py-[30px]">
                 <h1 className="text-[#FFF] font-sans text-[51px] font-semibold">
                     Top Creators
                 </h1>
@@ -96,8 +96,7 @@ export default function ranking() {
                     Check out top ranking NFT artists on the NFT Marketplace.
                 </h1>
             </div>
-            <hr />
-            <div className="flex justify-center items-center px-[115px] h-[70px]">
+            <div className="md:flex justify-center items-center xsm:px-[30px] xsm:h-[60px] lg:px-[115px] lg:h-[70px] hidden">
                 <div className="flex justify-center items-center font-sans font-semibold text-22px bg-[#2B2B2B] text-white w-1/2">
                     Today
                 </div>
@@ -111,16 +110,41 @@ export default function ranking() {
                     All Time
                 </div>
             </div>
-            <div className="flex justify-between mt-[40px] mb-[20px] px-[115px]">
-                <div className="flex">
-                    <h1 className="font-mono text-[#858584]">Artist</h1>
+            <div className="hidden xsm:flex md:hidden justify-center items-center">
+                <div className="text-white font-sans font-semibold px-[30px]">
+                    1d
                 </div>
-                <div className="flex items-stretch">
-                    <h1 className="font-mono text-[#858584] mr-32">Change</h1>
-                    <h1 className="font-mono text-[#858584] mr-32">
-                        NFTs Sold
-                    </h1>
-                    <h1 className="font-mono text-[#858584] mr-32">Volume</h1>
+                <div className="text-white font-sans font-semibold px-[30px]">
+                    7d
+                </div>
+                <div className="text-white font-sans font-semibold px-[30px]">
+                    30d
+                </div>
+                <div className="text-white font-sans font-semibold px-[30px]">
+                    All Time
+                </div>
+            </div>
+            <div className="flex justify-center items-center xsm:px-[30px] xsm:h-[60px] lg:px-[115px] lg:h-[70px] mt-[40px] mb-[20px] px-[115px]">
+                <div className="flex justify-between w-full px-[20px] border-[1px] rounded-3xl">
+                    <div className="flex gap-[35px]">
+                        <h1 className="flex justify-center items-center ml-[10px] text-[#858584] font-mono">
+                            #
+                        </h1>
+                        <h1 className="flex justify-center items-center font-mono text-[#858584] my-[12px]">
+                            Artist
+                        </h1>
+                    </div>
+                    <div className="flex items-stretch">
+                        <h1 className="md:flex font-mono text-[#858584] md:w-36 xsm:hidden my-[12px]">
+                            Change
+                        </h1>
+                        <h1 className="lg:flex font-mono text-[#858584] md:w-44 xsm:hidden my-[12px]">
+                            NFTs Sold
+                        </h1>
+                        <h1 className="font-mono text-[#858584] xsm:w-20 md:w-48 my-[12px]">
+                            Volume
+                        </h1>
+                    </div>
                 </div>
             </div>
             <div className="flex flex-col w-full py-[40px] gap-[20px]">

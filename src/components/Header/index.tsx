@@ -61,15 +61,17 @@ export function Header() {
                             </p>
                         </a>
                     </button>
-                    <button className="bg-[#A259FF] gap-2 py-4 px-7 text-white font-sans font-semibold rounded-3xl flex flex-row items-center hover:scale-90 transition-all ease-in-out duration-500">
+                    <button className="bg-[#A259FF] py-4 px-7 text-white font-sans font-semibold rounded-3xl flex flex-row items-center hover:scale-90 transition-all ease-in-out duration-500">
                         <a href="/sign-up">
-                            <div className="flex">
-                                <Image
-                                    src="/user.svg"
-                                    alt=""
-                                    width={20}
-                                    height={20}
-                                />
+                            <div className="flex gap-3">
+                                <h1 className="flex justify-center items-center">
+                                    <Image
+                                        src="/user.svg"
+                                        alt=""
+                                        width={20}
+                                        height={20}
+                                    />
+                                </h1>
                                 <p className="">Sign Up</p>
                             </div>
                         </a>

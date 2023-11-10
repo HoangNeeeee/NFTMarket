@@ -18,8 +18,8 @@ export default function Page() {
                 <TopCreator />
                 <BrowserCategories />
                 <DiscoverNFT />
-                <Usermanual />
                 <Mashroom />
+                <Usermanual />
                 <HomeFooter />
             </Suspense>
         </main>

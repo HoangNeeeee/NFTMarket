@@ -59,12 +59,14 @@ export const Mashroom = () => {
                         <Image
                             src="Avatar1.svg"
                             alt=""
-                            width={24}
-                            height={24}
+                            width={20}
+                            height={10}
                         />
                         Shroomie
                     </h1>
-                    <h1 className="w-full text-[51px]">Magic Mushrooms</h1>
+                    <h1 className="w-full lg:text-[51px] md:text-[38px]">
+                        Magic Mushrooms
+                    </h1>
                     <NMButton
                         title="See NFT"
                         iconSrc="Eye.svg"
@@ -72,7 +74,7 @@ export const Mashroom = () => {
                         className="px-0"
                     />
                 </div>
-                <div className="bg-[#3B3B3B] self-end p-8 rounded-2xl backdrop-blur-sm bg-opacity-50 text-white">
+                <div className="bg-[#3B3B3B] self-end p-8 rounded-2xl backdrop-blur-sm bg-opacity-50 text-white xsm:hidden">
                     <p className="font-mono text-[12px]">Auction end in:</p>
                     <div className="flex gap-[10px]">
                         <div className="flex flex-col">
