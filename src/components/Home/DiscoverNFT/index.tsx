@@ -15,7 +15,7 @@ export const DiscoverNFT = () => {
                     </p>
                 </div>
                 <div className="flex">
-                    <a className="flex " href="/market-place">
+                    <a className="flex" href="/market-place">
                         <NMButton
                             title="See All"
                             iconSrc="Eye.svg"
