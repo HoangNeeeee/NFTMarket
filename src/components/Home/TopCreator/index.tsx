@@ -97,14 +97,16 @@ export function TopCreator() {
                 </div>
                 <div className="flex items-end">
                     <button className="bg-[#4343] w-[220px] h-[60px] rounded-2xl border-2 border-violet-600 flex justify-center items-center hover:scale-90 transition-all ease-in-out duration-500">
-                        <Image
-                            className="mr-3"
-                            src="RocketLaunch.svg"
-                            alt="Rocket"
-                            width={20}
-                            height={20}
-                        />
-                        View Ranking
+                        <a className="flex" href="/ranking">
+                            <Image
+                                className="mr-3"
+                                src="RocketLaunch.svg"
+                                alt="Rocket"
+                                width={20}
+                                height={20}
+                            />
+                            View Ranking
+                        </a>
                     </button>
                 </div>
             </div>
@@ -119,7 +121,7 @@ export function TopCreator() {
                             handleItemClick={handleClick}
                         />
                     ))}
-                </div> 
+                </div>
                 <div className="flex justify-center gap-60">
                     <button
                         className="text-white text-lg w-[100px] mt-10 bg-pink-600 rounded-2xl"

@@ -50,7 +50,7 @@ export function Header() {
                     <button>
                         <a href="/ranking">
                             <p className="flex flex-row items-center text-white mr-12 font-mono font-extrabold hover:scale-90 transition-all ease-in-out duration-500">
-                                Ranking
+                                Rankings
                             </p>
                         </a>
                     </button>

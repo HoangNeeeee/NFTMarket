@@ -33,7 +33,7 @@ export const Mashroom = () => {
 
     return (
         <div className="relative w-full h-[calc(0.5*100vw)]">
-            <div className="relative bg-gradient-to-b from-white to-purple-600">
+            <div className="relative flex md:flex-row xsm:flex-col bg-gradient-to-b from-white to-purple-600">
                 <Image
                     className="absolute object-cover"
                     src="NFTHighlight.svg"
@@ -54,7 +54,7 @@ export const Mashroom = () => {
             />
             <div className="bg-gradient-to-b from-[#00000000] to-[#A259FF] flex absolute w-full h-full z-10" />
             <div className="px-[115px] w-full absolute flex justify-between bottom-[60px] z-40">
-                <div className="text-white flex self-end flex-col gap-[30px] font-sans font-semibold">
+                <div className="text-white flex self-end flex-col gap-[30px] font-sans font-semibold xsm:">
                     <h1 className="bg-[#3B3B3B] flex justify-center items-center gap-3 rounded-xl text-[16px] text-white w-[150px] h-[45px] px-[20px] py-[11px] ">
                         <Image
                             src="Avatar1.svg"

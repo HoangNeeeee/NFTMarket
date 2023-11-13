@@ -31,7 +31,7 @@ export function Discover(props: DiscoverProps) {
     return (
         <button className="rounded-2xl overflow-hidden relative hover:scale-90 transition-all ease-in-out duration-500">
             <img
-                className=" md:h-[269px] md:w-[300px] h-[295px] w-[330px] "
+                className="md:h-[269px] md:w-[300px] h-[295px] w-[330px] "
                 src={props.ImageSrc}
                 alt="Anh1"
             />
