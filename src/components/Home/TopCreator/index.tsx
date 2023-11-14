@@ -7,62 +7,62 @@ const creators = [
     {
         src1: "Anh1.svg",
         title2: "Keepitreal",
-        title3: "34.53 ETH",
+        title3: `${(Math.random() * 51).toFixed(2)} ETH`,
     },
     {
         src1: "Anh2.svg",
         title2: "DigiLab",
-        title3: "34.53 ETH",
+        title3: `${(Math.random() * 51).toFixed(2)} ETH`,
     },
     {
         src1: "Anh3.svg",
         title2: "GravityOne ",
-        title3: "34.53 ETH",
+        title3: `${(Math.random() * 51).toFixed(2)} ETH`,
     },
     {
         src1: "Anh4.svg",
         title2: "DigiLab",
-        title3: "34.53 ETH",
+        title3: `${(Math.random() * 51).toFixed(2)} ETH`,
     },
     {
         src1: "Anh5.svg",
         title2: "DigiLab",
-        title3: "34.53 ETH",
+        title3: `${(Math.random() * 51).toFixed(2)} ETH`,
     },
     {
         src1: "Anh6.svg",
         title2: "DigiLab",
-        title3: "34.53 ETH",
+        title3: `${(Math.random() * 51).toFixed(2)} ETH`,
     },
     {
         src1: "Anh7.svg",
         title2: "DigiLab",
-        title3: "34.53 ETH",
+        title3: `${(Math.random() * 51).toFixed(2)} ETH`,
     },
     {
         src1: "Anh8.svg",
         title2: "DigiLab",
-        title3: "34.53 ETH",
+        title3: `${(Math.random() * 51).toFixed(2)} ETH`,
     },
     {
         src1: "Anh9.svg",
         title2: "DigiLab",
-        title3: "34.53 ETH",
+        title3: `${(Math.random() * 51).toFixed(2)} ETH`,
     },
     {
         src1: "Anh10.svg",
         title2: "DigiLab",
-        title3: "34.53 ETH",
+        title3: `${(Math.random() * 51).toFixed(2)} ETH`,
     },
     {
         src1: "Anh11.svg",
         title2: "DigiLab",
-        title3: "34.53 ETH",
+        title3: `${(Math.random() * 51).toFixed(2)} ETH`,
     },
     {
         src1: "Anh12.svg",
         title2: "DigiLab",
-        title3: "34.53 ETH",
+        title3: `${(Math.random() * 51).toFixed(2)} ETH`,
     },
 ]
 export function TopCreator() {
@@ -122,7 +122,7 @@ export function TopCreator() {
                         />
                     ))}
                 </div>
-                <div className="flex justify-center gap-60">
+                {/* <div className="flex justify-center gap-60">
                     <button
                         className="text-white text-lg w-[100px] mt-10 bg-pink-600 rounded-2xl"
                         onClick={() => {
@@ -131,7 +131,7 @@ export function TopCreator() {
                     >
                         Thêm
                     </button>
-                </div>
+                </div> */}
             </div>
         </div>
     )

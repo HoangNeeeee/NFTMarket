@@ -31,8 +31,8 @@ export const DiscoverNFT = () => {
                         AvatarSrc="Avatar1.svg"
                         Name="Distant Galaxy"
                         UserName="MoonDancer"
-                        Price="1.63"
-                        Bid="0.33"
+                        Price={(Math.random() * 20).toFixed(2)}
+                        Bid={(Math.random() * 5).toFixed(2)}
                     />
                 </button>
                 <button>
@@ -41,8 +41,8 @@ export const DiscoverNFT = () => {
                         AvatarSrc="Avatar2.svg"
                         Name="Distant Galaxy"
                         UserName="MoonDancer"
-                        Price="1.63"
-                        Bid="0.33"
+                        Price={(Math.random() * 20).toFixed(2)}
+                        Bid={(Math.random() * 5).toFixed(2)}
                     />
                 </button>
                 <button className="md:hidden lg:flex">
@@ -51,8 +51,8 @@ export const DiscoverNFT = () => {
                         AvatarSrc="Avatar3.svg"
                         Name="Distant Galaxy"
                         UserName="MoonDancer"
-                        Price="1.63"
-                        Bid="0.33"
+                        Price={(Math.random() * 20).toFixed(2)}
+                        Bid={(Math.random() * 5).toFixed(2)}
                     />
                 </button>
             </div>
