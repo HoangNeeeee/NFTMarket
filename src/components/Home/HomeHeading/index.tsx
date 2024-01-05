@@ -7,7 +7,7 @@ export const HomeHeading = () => {
             <div className="justify-center">
                 <div className="w-full h-auto flex flex-col md:flex-row justify-center gap-10">
                     <div className="md:w-1/2">
-                        <h1 className="bg-[#2B2B2B] text-white xsm:text-[28px] md:text-[38px] lg:text-6xl h-auto lg:w-[510px] font-sans capitalize font-semibold">
+                        <h1 className="bg-white dark:bg-[#2B2B2B] dark:text-white xsm:text-[28px] md:text-[38px] lg:text-6xl h-auto lg:w-[510px] font-sans capitalize font-semibold">
                             Discover digital art & Collect NFTs
                         </h1>
                         <h2 className="bg-[#2B2B2B] text-white xsm:text-[16px] lg:text-[22px] lg:w-[510px] h-auto text-xl font-sans mt-[20px] mb-7 capitalize">

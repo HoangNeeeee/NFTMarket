@@ -11,7 +11,7 @@ import TwitterIcon from "@/assets/icons/ic_twitter.svg"
 import InstagramIcon from "@/assets/icons/ic_instagram.svg"
 export function Footer() {
     return (
-        <footer className="py-10 flex flex-col bg-[#3B3B3B] justify-between lg:px-[115px] px-[30px] ">
+        <footer className="py-10 flex flex-col bg-white dark:bg-[#3B3B3B] justify-between lg:px-[115px] px-[30px] ">
             <div className="flex flex-col gap-[30px] lg:flex-row lg:justify-between">
                 <div className="flex flex-col lg:max-w-[250px]">
                     <div className="flex flex-row items-center">
@@ -23,14 +23,14 @@ export function Footer() {
                             width={30}
                             height={30}
                         />
-                        <p className="text-white text-xl font-mono ">
+                        <p className="dark:text-white text-black text-xl font-mono ">
                             NFT Marketplace
                         </p>
                     </div>
-                    <button className="flex left-0 text-[#CCCCCC] mt-[30px] hover:text-blue-700">
+                    <button className="flex left-0 dark:text-[#CCCCCC] mt-[30px] hover:text-blue-700">
                         NFT marketplace UI created with Anima for Figma.
                     </button>
-                    <p className="text-[#CCCCCC] mt-[20px]">
+                    <p className="dark:text-[#CCCCCC] mt-[20px]">
                         Join our community
                     </p>
                     <div className="flex flex-row mt-[15px]">
@@ -77,36 +77,36 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="flex flex-col lg:max-w-[250px]">
-                    <p className="flex flex-col text-white text-xl font-mono">
+                    <p className="flex flex-col dark:text-white text-xl font-mono">
                         Explore
                     </p>
-                    <button className="flex text-[#CCCCCC] mt-[25px] hover:text-blue-700">
+                    <button className="flex dark:text-[#CCCCCC] mt-[25px] hover:text-blue-700">
                         MarketPlace
                     </button>
-                    <button className="flex text-[#CCCCCC] mt-[20px] hover:text-blue-700">
+                    <button className="flex dark:text-[#CCCCCC] mt-[20px] hover:text-blue-700">
                         Rankings
                     </button>
-                    <button className="flex text-[#CCCCCC] mt-[20px] hover:text-blue-700">
+                    <button className="flex dark:text-[#CCCCCC] mt-[20px] hover:text-blue-700">
                         Connect a wallet
                     </button>
                 </div>
                 <div className="flex flex-col flex-1 lg:max-w-[400px] relative">
-                    <div className="flex flex-row text-white text-xl font-mono">
+                    <div className="flex flex-row dark:text-white text-xl font-mono">
                         Join our weekly digest
                     </div>
-                    <p className="text-[#CCCCCC] pr-20 mt-[25px] hover:text-blue-700">
+                    <p className="dark:text-[#CCCCCC] pr-20 mt-[25px] hover:text-blue-700">
                         Get exclusive promotions & updates straight to your
                         inbox.
                     </p>
-                    <div className=" flex flex-col mt-5 md:bg-[#ffffff] rounded-2xl gap-4 md:w-[390px] md:relative">
+                    <div className=" flex flex-col mt-5 dark:md:bg-[#ffffff] rounded-2xl gap-4 md:w-[390px] md:relative">
                         <input
-                            className="rounded-2xl px-4 placeholder-[#2B2B2B] outline-none w-full h-[46px] md:w-[230px] md:h-[60px]"
+                            className="rounded-2xl border-[2px] px-4 dark:placeholder-[#2B2B2B] outline-none w-full h-[46px] md:w-[230px] md:h-[60px]"
                             type="email"
                             // required
                             placeholder="Enter Your Email Address"
                         />
                         <button className="md:h-[60px] h-[46px] bg-[#A259FF] md:right-0 rounded-2xl md:absolute transform duration-500 hover:scale-95">
-                            <h1 className="px-12 text-white">Subscribe</h1>
+                            <h1 className="px-12 dark:text-white">Subscribe</h1>
                         </button>
                     </div>
                 </div>
@@ -121,10 +121,12 @@ export function Footer() {
             {/* </div>  */}
             {/* <hr /> */}
             {/* <div className="grid grid-cols-1 divide-y bg-white mt-4"></div> */}
-            <p className="text-white font-mono pt-5">
+            <p className="dark:text-white font-mono pt-5">
                 Ⓒ NFT Market. Use this template freely.
             </p>
-            <p className="text-white font-mono">Design By EmHoangDangThoOxy</p>
+            <p className="dark:text-white font-mono">
+                Design By EmHoangDangThoOxy
+            </p>
         </footer>
     )
 }

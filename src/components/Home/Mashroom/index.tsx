@@ -10,7 +10,7 @@ const customParseFormat = require("dayjs/plugin/customParseFormat")
 dayjs.extend(customParseFormat)
 dayjs.extend(relativeTime)
 
-const destination = dayjs("20/10/2023 17:00:00", "DD/MM/YYYY HH:mm:ss")
+const destination = dayjs("20-11-2023 17:00:00", "DD/MM/YYYY HH:mm:ss")
 export const Mashroom = () => {
     const [dateDiffToSecond, setDateDiffToSecond] = useState()
 
@@ -20,7 +20,7 @@ export const Mashroom = () => {
     //     }, 1000)
     // }, [])
 
-    // const transformSecondToHours = (type) => {
+    // const transformSecondToHours = (type: any) => {
     //     switch (type) {
     //         case "hour":
     //             return Math.floor(dateDiffToSecond / 3600)
