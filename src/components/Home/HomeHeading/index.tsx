@@ -10,7 +10,7 @@ export const HomeHeading = () => {
                         <h1 className="bg-white dark:bg-[#2B2B2B] dark:text-white xsm:text-[28px] md:text-[38px] lg:text-6xl h-auto lg:w-[510px] font-sans capitalize font-semibold">
                             Discover digital art & Collect NFTs
                         </h1>
-                        <h2 className="bg-[#2B2B2B] text-white xsm:text-[16px] lg:text-[22px] lg:w-[510px] h-auto text-xl font-sans mt-[20px] mb-7 capitalize">
+                        <h2 className="dark:bg-[#2B2B2B] bg-white dark:text-white text-black xsm:text-[16px] lg:text-[22px] lg:w-[510px] h-auto text-xl font-sans mt-[20px] mb-7 capitalize">
                             Nft marketplace UI created with Anima for Figma.
                             Collect, buy and sell art from more than 20k NFT
                             artists.
@@ -29,26 +29,26 @@ export const HomeHeading = () => {
                         </a>
                         <div className="flex flex-row w-full h-auto xsm:justify-between lg:justify-start lg:gap-24 mt-[30px]">
                             <div className="w-full">
-                                <h1 className="text-white w-full h-auto flex flex-col font-mono xsm:text-[22px] lg:text-[28px]">
+                                <h1 className="dark:text-white text-black w-full h-auto flex flex-col font-mono xsm:text-[22px] lg:text-[28px]">
                                     240k+
                                 </h1>
-                                <p className="text-white self-stretch w-full h-auto font-mono xsm:text-[16px] lg:text-[24px]">
+                                <p className="dark:text-white text-black self-stretch w-full h-auto font-mono xsm:text-[16px] lg:text-[24px]">
                                     Total Sale
                                 </p>
                             </div>
                             <div className="w-full">
-                                <h1 className="text-white w-full h-auto flex flex-col font-mono xsm:text-[22px] lg:text-[28px]">
+                                <h1 className="dark:text-white text-black w-full h-auto flex flex-col font-mono xsm:text-[22px] lg:text-[28px]">
                                     100k+
                                 </h1>
-                                <p className="text-white self-stretch w-full h-auto font-mono xsm:text-[16px] lg:text-[24px]">
+                                <p className="dark:text-white text-black self-stretch w-full h-auto font-mono xsm:text-[16px] lg:text-[24px]">
                                     Auctions
                                 </p>
                             </div>
                             <div className="w-full">
-                                <h1 className="text-white w-full h-auto flex flex-col font-mono xsm:text-[22px] lg:text-[28px]">
+                                <h1 className="dark:text-white text-black w-full h-auto flex flex-col font-mono xsm:text-[22px] lg:text-[28px]">
                                     240k+
                                 </h1>
-                                <p className="text-white self-stretch w-full h-auto font-mono xsm:text-[16px] lg:text-[24px]">
+                                <p className="dark:text-white text-black self-stretch w-full h-auto font-mono xsm:text-[16px] lg:text-[24px]">
                                     Artists
                                 </p>
                             </div>

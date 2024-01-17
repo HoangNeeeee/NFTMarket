@@ -5,7 +5,7 @@ import { Discover, NMButton } from "@/components"
 export const DiscoverNFT = () => {
     return (
         <div className="lg:px-[115px] md:px-[72px] xsm:px-[30px] pt-20 pb-20">
-            <div className="flex xsm:flex-col md:flex-row text-black dark:text-white justify-between mb-14">
+            <div className="flex xsm:flex-col md:flex-row dark:text-white text-black justify-between mb-14">
                 <div>
                     <h1 className="text-4xl w-full font-sans font-semibold capitalize ">
                         Discover More NFTs
@@ -15,7 +15,7 @@ export const DiscoverNFT = () => {
                     </p>
                 </div>
                 <div className="flex">
-                    <a className="flex" href="/market-place">
+                    <a className="flex " href="/market-place">
                         <NMButton
                             title="See All"
                             iconSrc="Eye.svg"

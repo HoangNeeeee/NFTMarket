@@ -3,7 +3,7 @@ import { TrendingImage } from "@/components"
 
 export const TredingCollection = () => {
     return (
-        <div className="px-[30px] py-[40px] md:px-[72px] md:py-[40px] lg:px-[117px] lg:py-[80px] text-white">
+        <div className="px-[30px] py-[40px] md:px-[72px] md:py-[40px] lg:px-[117px] lg:py-[80px] dark:text-white text-black">
             <div className="">
                 <p className="text-4xl w-full h-auto font-sans font-semibold">
                     Trending Collections
@@ -22,6 +22,7 @@ export const TredingCollection = () => {
                         title1="DSGN Animals"
                         title2="MrFox"
                     />
+                    <a href="/user-profile">Mr.Fox</a>
                 </div>
                 <div className="xsm:hidden md:flex">
                     <div>

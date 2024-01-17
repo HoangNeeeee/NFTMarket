@@ -86,12 +86,12 @@ export function TopCreator() {
 
     return (
         <div>
-            <div className="px-[30px] pt-[40px] md:px-[72px] md:pt-[40px] lg:pt-[80px] lg:px-[115px] text-white flex xsm:flex-col md:flex-row justify-between">
+            <div className="px-[30px] pt-[40px] md:px-[72px] md:pt-[40px] lg:pt-[80px] lg:px-[115px] dark:text-white text-black flex xsm:flex-col md:flex-row justify-between">
                 <div className="">
                     <h1 className="text-4xl w-full font-sans font-semibold capitalize">
                         Top Creators
                     </h1>
-                    <p className="capitalize mt-2 font-sans">
+                    <p className="capitalize mt-2 text-xl font-sans">
                         Checkout top rated creator on the NFT marketplace
                     </p>
                 </div>
