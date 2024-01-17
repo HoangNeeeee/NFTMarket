@@ -89,24 +89,24 @@ export default function ranking() {
     return (
         <main className="mb-[20px]">
             <div className="lg:px-[115px] lg:py-[80px] xsm:px-[30px] xsm:py-[30px]">
-                <h1 className="text-[#FFF] font-sans text-[51px] font-semibold">
+                <h1 className="dark:text-white text-black font-sans text-[51px] font-semibold">
                     Top Creators
                 </h1>
-                <h1 className="font-sans text-[22px] text-[#FFF]">
+                <h1 className="font-sans text-[22px] dark:text-white text-black">
                     Check out top ranking NFT artists on the NFT Marketplace.
                 </h1>
             </div>
             <div className="md:flex justify-center items-center xsm:px-[30px] xsm:h-[60px] lg:px-[115px] lg:h-[70px] hidden">
-                <div className="flex justify-center items-center font-sans font-semibold text-22px bg-[#2B2B2B] text-white w-1/2">
+                <div className="flex justify-center items-center font-sans font-semibold text-22px dark:bg-[#2B2B2B] bg-white dark:text-white text-black w-1/2">
                     Today
                 </div>
-                <div className="flex justify-center items-center font-sans font-semibold text-22px bg-[#2B2B2B] text-white w-1/2">
+                <div className="flex justify-center items-center font-sans font-semibold text-22px dark:bg-[#2B2B2B] bg-white dark:text-white text-black w-1/2">
                     This Week
                 </div>
-                <div className="flex justify-center items-center font-sans font-semibold text-22px bg-[#2B2B2B] text-white w-1/2">
+                <div className="flex justify-center items-center font-sans font-semibold text-22px dark:bg-[#2B2B2B] bg-white dark:text-white text-black w-1/2">
                     This Month
                 </div>
-                <div className="flex justify-center items-center font-sans font-semibold text-22px bg-[#2B2B2B] text-white w-1/2">
+                <div className="flex justify-center items-center font-sans font-semibold text-22px dark:bg-[#2B2B2B] bg-white dark:text-white text-black w-1/2">
                     All Time
                 </div>
             </div>
@@ -125,7 +125,7 @@ export default function ranking() {
                 </div>
             </div>
             <div className="flex justify-center items-center xsm:px-[30px] xsm:h-[60px] lg:px-[115px] lg:h-[70px] mt-[40px] mb-[20px] px-[115px]">
-                <div className="flex justify-between w-full px-[20px] border-[1px] rounded-3xl">
+                <div className="flex justify-between w-full px-[20px] border-[2px] dark:border-white border-black rounded-3xl">
                     <div className="flex gap-[35px]">
                         <h1 className="flex justify-center items-center ml-[10px] text-[#858584] font-mono">
                             #

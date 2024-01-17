@@ -1,7 +1,309 @@
-import React from "react"
+"use client"
+import { Discover } from "@/components"
+import { useCopyToClipboard } from "@/hooks"
 import Image from "next/image"
+import { toast } from "react-toastify"
+import { Tabs } from "antd"
+import type { TabsProps } from "antd"
+import "./index.css"
+import { max } from "lodash"
 
+// Hàm thay đổi view theo key
+const onChange = (key: string) => {
+    console.log(key)
+}
+// View của Created
+const CreatedView = () => {
+    const markets = [
+        {
+            ImageSrc: "MarketImage1.svg",
+            AvatarSrc: "MarketAvatar1.svg",
+            Name: "Magic Mushroom 0325",
+            UserName: "Shroomie",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage2.svg",
+            AvatarSrc: "MarketAvatar2.svg",
+            Name: "Happy Robot 032",
+            UserName: "BeKind2Robots",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage3.svg",
+            AvatarSrc: "MarketAvatar3.svg",
+            Name: "Happy Robot 024",
+            UserName: "BeKind2Robots",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage4.svg",
+            AvatarSrc: "MarketAvatar4.svg",
+            Name: "Designer Bear",
+            UserName: "Mr Fox",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage5.svg",
+            AvatarSrc: "MarketAvatar5.svg",
+            Name: "Colorful Dog 0356",
+            UserName: "Keepitreal",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage6.svg",
+            AvatarSrc: "MarketAvatar6.svg",
+            Name: "Dancing Robot 0312",
+            UserName: "Robotica",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage7.svg",
+            AvatarSrc: "MarketAvatar7.svg",
+            Name: "Cherry Blossom Girl 035",
+            UserName: "MoonDancer",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage8.svg",
+            AvatarSrc: "MarketAvatar8.svg",
+            Name: "Space Travel",
+            UserName: "NebulaKid",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage9.svg",
+            AvatarSrc: "MarketAvatar9.svg",
+            Name: "Sunset Dimesion",
+            UserName: "AnimaKid",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage10.svg",
+            AvatarSrc: "MarketAvatar10.svg",
+            Name: "Desert Walk",
+            UserName: "Catch 22",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage11.svg",
+            AvatarSrc: "MarketAvatar11.svg",
+            Name: "IceCream Ape 0324",
+            UserName: "Ice Ape Club",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage12.svg",
+            AvatarSrc: "MarketAvatar12.svg",
+            Name: "Colorful Dog 0344",
+            UserName: "Puppy Power",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+    ]
+    return (
+        <div className="dark:bg-[#3B3B3B] bg-[#eeeee4] flex flex-wrap gap-[30px] w-full justify-center xsm:px-[30px] xsm:py-[40px] md:py-[60px] md:px-[77px] lg:px-[115px] ">
+            {markets.map((market) => (
+                <Discover
+                    ImageSrc={market.ImageSrc}
+                    AvatarSrc={market.AvatarSrc}
+                    Name={market.Name}
+                    UserName={market.UserName}
+                    Price={market.Price}
+                    Bid={market.Bid}
+                    type="secondary"
+                />
+            ))}
+        </div>
+    )
+}
+// View của Owned
+const OwnedView = () => {
+    const markets = [
+        {
+            ImageSrc: "MarketImage5.svg",
+            AvatarSrc: "MarketAvatar5.svg",
+            Name: "Colorful Dog 0356",
+            UserName: "Keepitreal",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage6.svg",
+            AvatarSrc: "MarketAvatar6.svg",
+            Name: "Dancing Robot 0312",
+            UserName: "Robotica",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage7.svg",
+            AvatarSrc: "MarketAvatar7.svg",
+            Name: "Cherry Blossom Girl 035",
+            UserName: "MoonDancer",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage8.svg",
+            AvatarSrc: "MarketAvatar8.svg",
+            Name: "Space Travel",
+            UserName: "NebulaKid",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage9.svg",
+            AvatarSrc: "MarketAvatar9.svg",
+            Name: "Sunset Dimesion",
+            UserName: "AnimaKid",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage10.svg",
+            AvatarSrc: "MarketAvatar10.svg",
+            Name: "Desert Walk",
+            UserName: "Catch 22",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage11.svg",
+            AvatarSrc: "MarketAvatar11.svg",
+            Name: "IceCream Ape 0324",
+            UserName: "Ice Ape Club",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage12.svg",
+            AvatarSrc: "MarketAvatar12.svg",
+            Name: "Colorful Dog 0344",
+            UserName: "Puppy Power",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+    ]
+    return (
+        <div className="dark:bg-[#3B3B3B] bg-[#eeeee4] flex flex-wrap gap-[30px] w-full justify-center xsm:px-[30px] xsm:py-[40px] md:py-[60px] md:px-[77px] lg:px-[115px] ">
+            {markets.map((market) => (
+                <Discover
+                    ImageSrc={market.ImageSrc}
+                    AvatarSrc={market.AvatarSrc}
+                    Name={market.Name}
+                    UserName={market.UserName}
+                    Price={market.Price}
+                    Bid={market.Bid}
+                    type="secondary"
+                />
+            ))}
+        </div>
+    )
+}
+// View của Collection
+const CollectionView = () => {
+    const markets = [
+        {
+            ImageSrc: "MarketImage5.svg",
+            AvatarSrc: "MarketAvatar5.svg",
+            Name: "Colorful Dog 0356",
+            UserName: "Keepitreal",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage6.svg",
+            AvatarSrc: "MarketAvatar6.svg",
+            Name: "Dancing Robot 0312",
+            UserName: "Robotica",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage7.svg",
+            AvatarSrc: "MarketAvatar7.svg",
+            Name: "Cherry Blossom Girl 035",
+            UserName: "MoonDancer",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage8.svg",
+            AvatarSrc: "MarketAvatar8.svg",
+            Name: "Space Travel",
+            UserName: "NebulaKid",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+        {
+            ImageSrc: "MarketImage9.svg",
+            AvatarSrc: "MarketAvatar9.svg",
+            Name: "Sunset Dimesion",
+            UserName: "AnimaKid",
+            Price: "1.63",
+            Bid: "0.33",
+        },
+    ]
+    return (
+        <div className="dark:bg-[#3B3B3B] bg-[#eeeee4] flex flex-wrap gap-[30px] w-full justify-center xsm:px-[30px] xsm:py-[40px] md:py-[60px] md:px-[77px] lg:px-[115px] ">
+            {markets.map((market) => (
+                <Discover
+                    ImageSrc={market.ImageSrc}
+                    AvatarSrc={market.AvatarSrc}
+                    Name={market.Name}
+                    UserName={market.UserName}
+                    Price={market.Price}
+                    Bid={market.Bid}
+                    type="secondary"
+                />
+            ))}
+        </div>
+    )
+}
+// Hàm chứa các key của các view khác nhau và thay đổi view khi click chọn các tab
+const items: TabsProps["items"] = [
+    {
+        key: "1",
+        label: "Created",
+        children: <CreatedView />,
+    },
+    {
+        key: "2",
+        label: "Owned",
+        children: <OwnedView />,
+    },
+    {
+        key: "3",
+        label: "Collection",
+        children: <CollectionView />,
+    },
+]
+// Usercode: mỗi một user sẽ có riêng 1 code khác nhau usercode được render random bằng thuật toán SHA-512
+// Hàm random usercode và click copy to clipboard
 function userProfile() {
+    const crypto = require("crypto")
+    const string = "HoangNeee"
+    // const buf = crypto.randomBytes(60)
+    const hash = crypto.createHash("sha512").update(string).digest("hex")
+    const [value, copy] = useCopyToClipboard()
+
+    const onCLick = () => {
+        copy(hash)
+        // copy(buf)
+        toast("This has been copied")
+    }
     return (
         <div className="relative w-full">
             <div className="relative bg-gradient-to-b from-[#00000000] to-[#A259FF] flex mb-20">
@@ -12,7 +314,8 @@ function userProfile() {
                     height={500}
                     alt=""
                 />
-                <div className="absolute mt-64 px-[115px]">
+                {/* Ảnh đại diện của người dùng */}
+                <div className="absolute md:mt-32 lg:mt-80 sm:px-[127px] md:px-[72px] lg:px-[115px]">
                     <Image
                         className=""
                         src="/AvatarUserProfile.svg"
@@ -22,36 +325,37 @@ function userProfile() {
                     />
                 </div>
             </div>
-            <div className="w-full flex gap-[100px] px-[115px] py-[40px]">
+
+            <div className="w-full flex justify-between gap-[100px] md:flex-col md:px-[72px] lg:px-[115px] py-[40px]">
                 <div>
                     <div className="flex flex-col gap-[30px]">
-                        <div>
-                            <h1 className="font-sans text-[51px] font-semibold text-white">
+                        <div className="flex">
+                            <h1 className="font-sans text-[51px] font-semibold dark:text-white text-black">
                                 AnimaKid
                             </h1>
                         </div>
                         <div className="flex gap-[20px]">
                             <div>
-                                <h1 className="font-sans text-[28px] font-semibold text-white">
+                                <h1 className="font-sans text-[28px] font-semibold dark:text-white text-black">
                                     250k+
                                 </h1>
-                                <h1 className="font-sans text-[22px] text-white">
+                                <h1 className="font-sans text-[22px] dark:text-white text-black">
                                     Volume
                                 </h1>
                             </div>
                             <div>
-                                <h1 className="font-sans text-[28px] font-semibold text-white">
+                                <h1 className="font-sans text-[28px] font-semibold dark:text-white text-black">
                                     50+
                                 </h1>
-                                <h1 className="font-sans text-[22px] text-white">
+                                <h1 className="font-sans text-[22px] dark:text-white text-black">
                                     NFTs Sold
                                 </h1>
                             </div>
                             <div>
-                                <h1 className="font-sans text-[28px] font-semibold text-white">
+                                <h1 className="font-sans text-[28px] font-semibold dark:text-white text-black">
                                     3000+
                                 </h1>
-                                <h1 className="font-sans text-[22px] text-white">
+                                <h1 className="font-sans text-[22px] dark:text-white text-black">
                                     Followers
                                 </h1>
                             </div>
@@ -60,7 +364,7 @@ function userProfile() {
                             <h1 className="font-mono text-[22px] font-bold text-[#858584]">
                                 Bio
                             </h1>
-                            <h1 className="font-sans text-[22px] text-white">
+                            <h1 className="font-sans text-[22px] dark:text-white text-black">
                                 The internet's friendliest designer kid.
                             </h1>
                         </div>
@@ -104,13 +408,37 @@ function userProfile() {
                     </div>
                 </div>
                 <div className="flex flex-row gap-[20px]">
-                    <h1 className="flex w-[190px] h-[60px] bg-[#A259FF] rounded-2xl items-center justify-center">
-                        Button
-                    </h1>
-                    <h1 className="flex w-[145px] h-[60px] border-[2px] rounded-2xl items-center justify-center">
-                        Button
-                    </h1>
+                    <button
+                        onClick={onCLick}
+                        className="flex w-[190px] h-[60px] gap-3 bg-[#A259FF] rounded-2xl items-center justify-center px-2"
+                    >
+                        <Image
+                            src="CopyImage.svg"
+                            alt=""
+                            width={20}
+                            height={20}
+                        />
+                        <h1 className="text-white  font-sans font-semibold truncate">
+                            {hash}
+                            {/* {buf} */}
+                        </h1>
+                    </button>
+                    <button className="flex w-[145px] h-[60px] border-[2px] rounded-2xl gap-3 items-center justify-center">
+                        <Image src="plus.svg" alt="" width={20} height={20} />
+                        <h1 className="dark:text-white text-black font-sans font-semibold">
+                            Follow
+                        </h1>
+                    </button>
                 </div>
+            </div>
+            <hr className="h-[2px]" />
+            <div className="flex justify-between dark:text-white text-black px-[115px] font-sans font-semibold text-[22px]">
+                <Tabs
+                    className=""
+                    defaultActiveKey="1"
+                    items={items}
+                    onChange={onChange}
+                />
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import UserIcon from "@/assets/icons/ic_user.svg"
 import { SignUpForm } from "@/components"
 export default function Home() {
     return (
-        <main className="flex justify-between flex-col md:flex-row bg-[#2B2B2B]">
+        <main className="flex justify-between flex-col md:flex-row dark:bg-[#2B2B2B] bg-white">
             <div className="md:w-[45%] flex flex-col w-full relative md:h-auto object-cover h-[300px]">
                 <Image
                     className="object-cover"
@@ -14,10 +14,10 @@ export default function Home() {
                 />
             </div>
             <div className="flex flex-col md:w-1/2  h-full px-[30px]">
-                <p className="md:w-full flex pt-10 font-sans not-italic font-semibold text-4xl leading-10 text-white">
+                <p className="md:w-full flex pt-10 font-sans not-italic font-semibold text-4xl leading-10 dark:text-white text-black">
                     Create Account
                 </p>
-                <p className="md:w-full h-16 pt-5 text-white">
+                <p className="md:w-full h-16 pt-5 dark:text-white text-black">
                     Welcome! enter your details and start creating, collecting
                     and selling NFTs.
                 </p>

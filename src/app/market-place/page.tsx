@@ -106,17 +106,17 @@ export default function Market() {
             <div>
                 <div className="flex flex-col h-full gap-[30px] lg:px-[115px] lg:py-[80px] md:px-[77px] md:py-[60px] px-[30px] py-[40px]">
                     <div>
-                        <h1 className="text-white lg:w-full font-sans text-[28px] md:text-[38px] lg:text-[51px] font-semibold mb-2">
+                        <h1 className="dark:text-white text-black lg:w-full font-sans text-[28px] md:text-[38px] lg:text-[51px] font-semibold mb-2">
                             Browse Marketplace
                         </h1>
-                        <h1 className="text-white font-sans sm:text-[16px] lg:text-[22px] lg:w-full">
+                        <h1 className="dark:text-white text-black font-sans sm:text-[16px] lg:text-[22px] lg:w-full">
                             Browse through more than 50k NFTs on the NFT
                             Marketplace.
                         </h1>
                     </div>
                     <div className="w-full px-5 h-[60px] mt-[30px] flex justify-center items-center border-[1px] border-[#858584] rounded-[20px]">
                         <input
-                            className="w-full bg-[#2B2B2B] outline-none"
+                            className="w-full dark:bg-[#2B2B2B] bg-white outline-none"
                             placeholder="Search your favourite NFTs"
                         ></input>
                         <Image
@@ -131,16 +131,16 @@ export default function Market() {
                 <hr />
                 <div>
                     <div className="flex justify-between px-[115px] h-[70px]">
-                        <div className="flex justify-center items-center font-sans font-semibold text-22px bg-[#2B2B2B] text-white w-1/2">
+                        <div className="flex justify-center items-center font-sans font-semibold text-22px dark:bg-[#2B2B2B] bg-white dark:text-white text-black w-1/2">
                             NFTs
                         </div>
-                        <div className="flex justify-center items-center font-sans font-semibold text-22px bg-[#2B2B2B] text-white w-1/2">
+                        <div className="flex justify-center items-center font-sans font-semibold text-22px dark:bg-[#2B2B2B] bg-white dark:text-white text-black w-1/2">
                             Collections
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="bg-[#3B3B3B] flex flex-wrap gap-[30px] w-full justify-center xsm:px-[30px] xsm:py-[40px] md:py-[60px] md:px-[77px] lg:px-[115px] ">
+            <div    >
                 {markets.map((market) => (
                     <Discover
                         ImageSrc={market.ImageSrc}
