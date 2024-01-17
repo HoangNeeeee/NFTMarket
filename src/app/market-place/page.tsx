@@ -1,104 +1,247 @@
+"use client"
 import React from "react"
 import Image from "next/image"
 import { Discover } from "@/components"
+import { Tabs } from "antd"
+import type { TabsProps } from "antd"
+import "./index.css"
 
 export default function Market() {
-    const markets = [
+    const onChange = (key: string) => {
+        console.log(key)
+    }
+    const NFTsView = () => {
+        const markets = [
+            {
+                ImageSrc: "MarketImage1.svg",
+                AvatarSrc: "MarketAvatar1.svg",
+                Name: "Magic Mushroom 0325",
+                UserName: "Shroomie",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage2.svg",
+                AvatarSrc: "MarketAvatar2.svg",
+                Name: "Happy Robot 032",
+                UserName: "BeKind2Robots",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage3.svg",
+                AvatarSrc: "MarketAvatar3.svg",
+                Name: "Happy Robot 024",
+                UserName: "BeKind2Robots",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage4.svg",
+                AvatarSrc: "MarketAvatar4.svg",
+                Name: "Designer Bear",
+                UserName: "Mr Fox",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage5.svg",
+                AvatarSrc: "MarketAvatar5.svg",
+                Name: "Colorful Dog 0356",
+                UserName: "Keepitreal",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage6.svg",
+                AvatarSrc: "MarketAvatar6.svg",
+                Name: "Dancing Robot 0312",
+                UserName: "Robotica",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage7.svg",
+                AvatarSrc: "MarketAvatar7.svg",
+                Name: "Cherry Blossom Girl 035",
+                UserName: "MoonDancer",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage8.svg",
+                AvatarSrc: "MarketAvatar8.svg",
+                Name: "Space Travel",
+                UserName: "NebulaKid",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage9.svg",
+                AvatarSrc: "MarketAvatar9.svg",
+                Name: "Sunset Dimesion",
+                UserName: "AnimaKid",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage10.svg",
+                AvatarSrc: "MarketAvatar10.svg",
+                Name: "Desert Walk",
+                UserName: "Catch 22",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage11.svg",
+                AvatarSrc: "MarketAvatar11.svg",
+                Name: "IceCream Ape 0324",
+                UserName: "Ice Ape Club",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage12.svg",
+                AvatarSrc: "MarketAvatar12.svg",
+                Name: "Colorful Dog 0344",
+                UserName: "Puppy Power",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+        ]
+        return (
+            <div className="dark:bg-[#3B3B3B] bg-[#eeeee4] flex flex-wrap gap-[30px] w-full justify-center xsm:px-[30px] xsm:py-[40px] md:py-[60px] md:px-[77px] lg:px-[115px] ">
+                {markets.map((market) => (
+                    <Discover
+                        ImageSrc={market.ImageSrc}
+                        AvatarSrc={market.AvatarSrc}
+                        Name={market.Name}
+                        UserName={market.UserName}
+                        Price={market.Price}
+                        Bid={market.Bid}
+                        type="secondary"
+                    />
+                ))}
+            </div>
+        )
+    }
+    const CollectionsView = () => {
+        const markets = [
+            {
+                ImageSrc: "MarketImage2.svg",
+                AvatarSrc: "MarketAvatar2.svg",
+                Name: "Happy Robot 032",
+                UserName: "BeKind2Robots",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage3.svg",
+                AvatarSrc: "MarketAvatar3.svg",
+                Name: "Happy Robot 024",
+                UserName: "BeKind2Robots",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage4.svg",
+                AvatarSrc: "MarketAvatar4.svg",
+                Name: "Designer Bear",
+                UserName: "Mr Fox",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage5.svg",
+                AvatarSrc: "MarketAvatar5.svg",
+                Name: "Colorful Dog 0356",
+                UserName: "Keepitreal",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage6.svg",
+                AvatarSrc: "MarketAvatar6.svg",
+                Name: "Dancing Robot 0312",
+                UserName: "Robotica",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage7.svg",
+                AvatarSrc: "MarketAvatar7.svg",
+                Name: "Cherry Blossom Girl 035",
+                UserName: "MoonDancer",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage8.svg",
+                AvatarSrc: "MarketAvatar8.svg",
+                Name: "Space Travel",
+                UserName: "NebulaKid",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage9.svg",
+                AvatarSrc: "MarketAvatar9.svg",
+                Name: "Sunset Dimesion",
+                UserName: "AnimaKid",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage10.svg",
+                AvatarSrc: "MarketAvatar10.svg",
+                Name: "Desert Walk",
+                UserName: "Catch 22",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage11.svg",
+                AvatarSrc: "MarketAvatar11.svg",
+                Name: "IceCream Ape 0324",
+                UserName: "Ice Ape Club",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+            {
+                ImageSrc: "MarketImage12.svg",
+                AvatarSrc: "MarketAvatar12.svg",
+                Name: "Colorful Dog 0344",
+                UserName: "Puppy Power",
+                Price: "1.63",
+                Bid: "0.33",
+            },
+        ]
+        return (
+            <div className="dark:bg-[#3B3B3B] bg-[#eeeee4] flex flex-wrap gap-[30px] w-full justify-center xsm:px-[30px] xsm:py-[40px] md:py-[60px] md:px-[77px] lg:px-[115px] ">
+                {markets.map((market) => (
+                    <Discover
+                        ImageSrc={market.ImageSrc}
+                        AvatarSrc={market.AvatarSrc}
+                        Name={market.Name}
+                        UserName={market.UserName}
+                        Price={market.Price}
+                        Bid={market.Bid}
+                        type="secondary"
+                    />
+                ))}
+            </div>
+        )
+    }
+    const items: TabsProps["items"] = [
         {
-            ImageSrc: "MarketImage1.svg",
-            AvatarSrc: "MarketAvatar1.svg",
-            Name: "Magic Mushroom 0325",
-            UserName: "Shroomie",
-            Price: "1.63",
-            Bid: "0.33",
+            key: "1",
+            label: "NFTs",
+            children: <NFTsView />,
         },
         {
-            ImageSrc: "MarketImage2.svg",
-            AvatarSrc: "MarketAvatar2.svg",
-            Name: "Happy Robot 032",
-            UserName: "BeKind2Robots",
-            Price: "1.63",
-            Bid: "0.33",
-        },
-        {
-            ImageSrc: "MarketImage3.svg",
-            AvatarSrc: "MarketAvatar3.svg",
-            Name: "Happy Robot 024",
-            UserName: "BeKind2Robots",
-            Price: "1.63",
-            Bid: "0.33",
-        },
-        {
-            ImageSrc: "MarketImage4.svg",
-            AvatarSrc: "MarketAvatar4.svg",
-            Name: "Designer Bear",
-            UserName: "Mr Fox",
-            Price: "1.63",
-            Bid: "0.33",
-        },
-        {
-            ImageSrc: "MarketImage5.svg",
-            AvatarSrc: "MarketAvatar5.svg",
-            Name: "Colorful Dog 0356",
-            UserName: "Keepitreal",
-            Price: "1.63",
-            Bid: "0.33",
-        },
-        {
-            ImageSrc: "MarketImage6.svg",
-            AvatarSrc: "MarketAvatar6.svg",
-            Name: "Dancing Robot 0312",
-            UserName: "Robotica",
-            Price: "1.63",
-            Bid: "0.33",
-        },
-        {
-            ImageSrc: "MarketImage7.svg",
-            AvatarSrc: "MarketAvatar7.svg",
-            Name: "Cherry Blossom Girl 035",
-            UserName: "MoonDancer",
-            Price: "1.63",
-            Bid: "0.33",
-        },
-        {
-            ImageSrc: "MarketImage8.svg",
-            AvatarSrc: "MarketAvatar8.svg",
-            Name: "Space Travel",
-            UserName: "NebulaKid",
-            Price: "1.63",
-            Bid: "0.33",
-        },
-        {
-            ImageSrc: "MarketImage9.svg",
-            AvatarSrc: "MarketAvatar9.svg",
-            Name: "Sunset Dimesion",
-            UserName: "AnimaKid",
-            Price: "1.63",
-            Bid: "0.33",
-        },
-        {
-            ImageSrc: "MarketImage10.svg",
-            AvatarSrc: "MarketAvatar10.svg",
-            Name: "Desert Walk",
-            UserName: "Catch 22",
-            Price: "1.63",
-            Bid: "0.33",
-        },
-        {
-            ImageSrc: "MarketImage11.svg",
-            AvatarSrc: "MarketAvatar11.svg",
-            Name: "IceCream Ape 0324",
-            UserName: "Ice Ape Club",
-            Price: "1.63",
-            Bid: "0.33",
-        },
-        {
-            ImageSrc: "MarketImage12.svg",
-            AvatarSrc: "MarketAvatar12.svg",
-            Name: "Colorful Dog 0344",
-            UserName: "Puppy Power",
-            Price: "1.63",
-            Bid: "0.33",
+            key: "2",
+            label: "Collections",
+            children: <CollectionsView />,
         },
     ]
     return (
@@ -129,29 +272,14 @@ export default function Market() {
                     </div>
                 </div>
                 <hr />
-                <div>
-                    <div className="flex justify-between px-[115px] h-[70px]">
-                        <div className="flex justify-center items-center font-sans font-semibold text-22px dark:bg-[#2B2B2B] bg-white dark:text-white text-black w-1/2">
-                            NFTs
-                        </div>
-                        <div className="flex justify-center items-center font-sans font-semibold text-22px dark:bg-[#2B2B2B] bg-white dark:text-white text-black w-1/2">
-                            Collections
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div    >
-                {markets.map((market) => (
-                    <Discover
-                        ImageSrc={market.ImageSrc}
-                        AvatarSrc={market.AvatarSrc}
-                        Name={market.Name}
-                        UserName={market.UserName}
-                        Price={market.Price}
-                        Bid={market.Bid}
-                        type="secondary"
-                    />
-                ))}
+            <div className="flex flex-wrap gap-[30px] w-full justify-centers dark:text-white text-black font-sans font-semibold text-[22px]">
+                <Tabs
+                    className=""
+                    defaultActiveKey="1"
+                    items={items}
+                    onChange={onChange}
+                />
             </div>
             <hr />
         </main>

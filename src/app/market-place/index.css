@@ -1,0 +1,22 @@
+.ant-tabs-nav-wrap {
+    
+    color: white;
+}
+.ant-tabs-nav-list {
+    width: 100%;
+    justify-content: space-around;
+}
+.ant-tabs-tab-btn {
+    color: white;
+    font-size: large;
+    text-shadow: 0 0 0.25px currentcolor;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: pink !important; 
+    font-weight: 500;
+ }
+ .ant-tabs-ink-bar {
+    position: absolute;
+    background: black !important;
+    pointer-events: none;
+}
