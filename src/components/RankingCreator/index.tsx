@@ -19,9 +19,9 @@ export function RankingCreator(props: {
     } = props
     return (
         <div className="xsm:px-[30px] lg:px-[115px] w-full">
-            <button className="bg-[#3B3B3B] flex items-center justify-between w-full text-white px-5 py-5 rounded-2xl hover:scale-90 transition-all ease-in-out duration-500">
+            <button className="dark:bg-[#3B3B3B] bg-[#eeeee4] flex items-center justify-between w-full dark:text-white text-black px-5 py-5 rounded-2xl hover:scale-90 transition-all ease-in-out duration-500">
                 <div className="flex w-auto items-center justify-center gap-[20px]">
-                    <div className="lg:bg-[#2B2B2B] w-7 h-7 rounded-2xl flex items-center justify-center font-mono">
+                    <div className="dark:lg:bg-[#2B2B2B] bg-white w-7 h-7 rounded-2xl flex items-center justify-center font-mono">
                         <h1 className="w-full font-mono text-[#858584] mx-[10px]">
                             {indexNumber}
                         </h1>

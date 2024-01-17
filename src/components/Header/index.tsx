@@ -1,22 +1,42 @@
 "use client"
 
+import { useEffect, useState } from "react"
 import { useBreakpoint } from "@/hooks"
 import Image from "next/image"
 import Link from "next/link"
 import { DarkMode } from "../DarkMode"
-// import { Hamburger } from "../HamburgerBar"
+import { Hamburger } from "../HamburgerBar"
+import { theme } from "antd"
 export function Header() {
+    // useEffect(() => {
+    //     const theme = localStorage.getItem("theme")
+    //     const htmlClasses = document.querySelector("html")?.classList
+    //     if (theme === "dark") {
+    //         document.querySelector("html")?.classList.add("dark")
+    //     } else {
+    //         htmlClasses?.remove("dark")
+    //     }
+    // }, [theme])
+    function getItem() {
+        localStorage.getItem("theme")
+    }
     const linkStyle = {
         marginRight: 15,
     }
-    // function MenuBar() {
-    //     const [isOpen, setIsOpen] = useState(false)
+    function MenuBar() {
+        const [isOpen, setIsOpen] = useState(false)
 
-    //     const toggleMenu = () => {
-    //         setIsOpen((open) => !open)
-    //     }
-    // }
+        const toggleMenu = () => {
+            setIsOpen((open) => !open)
+        }
+    }
     const breakpoint = useBreakpoint()
+
+    useEffect(() => {
+        const theme = localStorage.getItem("theme")
+        document.body.className = theme ?? "dark"
+    }, [theme])
+
     return (
         <header className="py-1 md:py-3 lg:py-5 px-7 flex flex-row dark:bg-[#3B3B3B] bg-white justify-between">
             <div className="flex flex-row items-center">
@@ -24,7 +44,7 @@ export function Header() {
                     className="mr-4"
                     priority
                     src="Storefront.svg"
-                    alt="logoicon"
+                    alt="logoIcon"
                     width={30}
                     height={30}
                 />
@@ -60,7 +80,10 @@ export function Header() {
                         </a>
                     </button>
                     <button className="mr-[20px]">
-                        <div className="flex justify-center items-center transform duration-500 hover:scale-90">
+                        <div
+                            onClick={getItem}
+                            className="flex justify-center items-center transform duration-500 hover:scale-90"
+                        >
                             <DarkMode />
                         </div>
                     </button>
@@ -81,19 +104,10 @@ export function Header() {
                     </button>
                 </div>
             )}
-            {!breakpoint.xl && (
-                <div className="flex">
-                    <button>
-                        {/* <Image
-                            src="/menubar.svg"
-                            width={30}
-                            height={30}
-                            alt=""
-                        /> */}
-                        {/* <Hamburger /> */}
-                    </button>
-                </div>
-            )}
+            <button className="xsm:flex md:hidden">
+                <Hamburger />
+            </button>
+            {/* {!breakpoint.xl && <div className="flex"></div>} */}
         </header>
     )
 }

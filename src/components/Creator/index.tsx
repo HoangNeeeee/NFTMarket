@@ -10,7 +10,7 @@ export function Creator(props: {
     return (
         <div>
             <button
-                className="bg-[#3B3B3B] text-white w-full lg:h-[238px] px-5 py-5 rounded-2xl flex lg:flex-col xsm:flex-row justify-center items-center hover:scale-90 transition-all ease-in-out duration-500"
+                className="dark:bg-[#3B3B3B] bg-white dark:text-white text-black w-full lg:h-[238px] px-5 py-5 rounded-2xl flex lg:flex-col xsm:flex-row justify-center items-center hover:scale-90 transition-all ease-in-out duration-500"
                 onClick={() => props.handleItemClick(props.indexNumber)}
             >
                 <div className="relative">
@@ -19,7 +19,7 @@ export function Creator(props: {
                         src={props.imageSrc}
                         alt={props.imageSrc}
                     />
-                    <div className="bg-[#2B2B2B] w-7 h-7 absolute xsm:-top-2 xsm:-left-2 md:-left-1 md:-top-1 lg:top-0 lg:left-0 rounded-2xl flex items-center justify-center">
+                    <div className="dark:bg-[#2B2B2B] bg-white w-7 h-7 absolute xsm:-top-2 xsm:-left-2 md:-left-1 md:-top-1 lg:top-0 lg:left-0 rounded-2xl flex items-center justify-center">
                         <h1 className="w-[10] h-[22] font-mono text-[#858584]">
                             {props.indexNumber}
                         </h1>

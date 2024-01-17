@@ -5,31 +5,37 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core"
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons"
 
 export function DarkMode() {
-    const [isDarkMode, setIsDarkMode] = useState(true)
-    useEffect(() => {
-        const htmlClasses = document.querySelector("html")?.classList
-        if (isDarkMode) {
-            document.querySelector("html")?.classList.add("dark")
+    const [theme, setTheme] = useState(localStorage.getItem("theme") || "light")
+    const toggleTheme = () => {
+        if (theme === "dark") {
+            setTheme("light")
         } else {
-            htmlClasses?.remove("dark")
+            setTheme("dark")
         }
-    }, [isDarkMode])
+    }
+    
+    useEffect(() => {
+        localStorage.setItem("theme", theme)
+        document.body.className = theme
+    }, [theme])
+
     return (
         <div className="flex items-center ">
-            {isDarkMode ? (
+            {theme ? (
                 <FontAwesomeIcon
-                    className="bg-[#3B3B3B] w-[30px] h-[30px]"
-                    icon={faSun as IconProp}
-                    title="Light Mode"
+                    className="dark:bg-[#3B3B3B] bg-white w-[30px] h-[30px]"
+                    icon={faMoon as IconProp}
+                    title="Dark Mode"
                     color="white"
-                    onClick={() => setIsDarkMode((prevState) => !prevState)}
+                    onClick={toggleTheme}
                 />
             ) : (
                 <FontAwesomeIcon
-                    className="bg-white w-[30px] h-[30px]"
-                    icon={faMoon as IconProp}
-                    title="Dark Mode"
-                    onClick={() => setIsDarkMode((prevState) => !prevState)}
+                    className=" w-[30px] h-[30px]"
+                    icon={faSun as IconProp}
+                    title="Light Mode"
+                    color="black"
+                    onClick={toggleTheme}
                 />
             )}
         </div>

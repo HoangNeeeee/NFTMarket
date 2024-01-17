@@ -111,9 +111,19 @@ export function Footer() {
                     </div>
                 </div>
             </div>
-            <div>
-                <a href="tel:0966059491">ABCDEF</a>
-                <a href="mailto: hn24101991@gmail.com">ABCDEF</a>
+            <div className="flex flex-col">
+                <a
+                    className="dark:text-[#CCCCCC] text-black"
+                    href="tel:0966059491"
+                >
+                    My Contact
+                </a>
+                <a
+                    className="dark:text-[#CCCCCC] text-black"
+                    href="mailto:hn24101991@gmail.com"
+                >
+                    My Email
+                </a>
             </div>
             <div>
                 <hr className="mt-[30px]" />

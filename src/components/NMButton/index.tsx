@@ -10,19 +10,19 @@ const theme = {
     primary: {
         bgColor: "bg-[#A259FF]",
         borderColor: "",
-        textColor: "text-white",
+        textColor: "dark:text-white text-black",
         borderWidth: "border-0",
     },
     secondary: {
         bgColor: "bg-transparent",
         borderColor: "border-[#A259FF]",
-        textColor: "text-white",
+        textColor: "dark:text-white text-black",
         borderWidth: "border-[1px]",
     },
     whitebg: {
         bgColor: "bg-white",
         borderColor: "",
-        textColor: "text-[#2B2B2B]",
+        textColor: "dark:text-white text-black",
         borderWidth: "border-0",
     },
 }
