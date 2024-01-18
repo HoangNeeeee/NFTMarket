@@ -7,6 +7,7 @@ import Link from "next/link"
 import { DarkMode } from "../DarkMode"
 import { Hamburger } from "../HamburgerBar"
 import { theme } from "antd"
+import { NavMobile } from "../navMobile"
 export function Header() {
     // useEffect(() => {
     //     const theme = localStorage.getItem("theme")
@@ -79,6 +80,7 @@ export function Header() {
                             </p>
                         </a>
                     </button>
+
                     <button className="mr-[20px]">
                         <div
                             onClick={getItem}
@@ -104,8 +106,9 @@ export function Header() {
                     </button>
                 </div>
             )}
-            <button className="xsm:flex md:hidden">
-                <Hamburger />
+            <button className="xsm:flex md:hidden ">
+                {/* <Hamburger /> */}
+                <NavMobile />
             </button>
             {/* {!breakpoint.xl && <div className="flex"></div>} */}
         </header>
