@@ -109,9 +109,7 @@ export function Header() {
             <div className="flex justify-center">
                 <button>
                     {/* <Hamburger /> */}
-                    <div className="flex justify-center items-center">
-                        <NavMobile />
-                    </div>
+                    <NavMobile />
                 </button>
                 <button>
                     <DarkMode />
