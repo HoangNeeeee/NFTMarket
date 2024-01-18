@@ -22,7 +22,6 @@ export default function RootLayout({
                     <div className="dark:bg-[#2B2B2B] bg-white">{children}</div>
                     <hr />
                     <Footer />
-
                     <ToastContainer />
                 </div>
             </body>

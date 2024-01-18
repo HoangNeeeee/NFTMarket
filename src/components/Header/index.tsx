@@ -106,10 +106,17 @@ export function Header() {
                     </button>
                 </div>
             )}
-            <button className="xsm:flex md:hidden ">
-                {/* <Hamburger /> */}
-                <NavMobile />
-            </button>
+            <div className="flex justify-center">
+                <button>
+                    {/* <Hamburger /> */}
+                    <div className="flex justify-center items-center">
+                        <NavMobile />
+                    </div>
+                </button>
+                <button>
+                    <DarkMode />
+                </button>
+            </div>
             {/* {!breakpoint.xl && <div className="flex"></div>} */}
         </header>
     )

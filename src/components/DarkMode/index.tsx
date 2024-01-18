@@ -13,7 +13,7 @@ export function DarkMode() {
             setTheme("dark")
         }
     }
-    
+
     useEffect(() => {
         localStorage.setItem("theme", theme)
         document.body.className = theme
@@ -31,7 +31,7 @@ export function DarkMode() {
                 />
             ) : (
                 <FontAwesomeIcon
-                    className=" w-[30px] h-[30px]"
+                    className=" w-[40px] h-[40px]"
                     icon={faSun as IconProp}
                     title="Light Mode"
                     color="black"
