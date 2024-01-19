@@ -305,7 +305,7 @@ function userProfile() {
         toast("This has been copied")
     }
     return (
-        <div className="relative w-full z-10">
+        <div className="relative w-full z-10 xsm:pt-[20px] md:pt-0">
             <div className="relative bg-gradient-to-b from-[#00000000] to-[#A259FF] flex mb-20">
                 <Image
                     className="bg-gradient-to-b from-[#00000000] to-[#A259FF] w-full "

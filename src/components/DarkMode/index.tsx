@@ -5,7 +5,7 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core"
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons"
 
 export function DarkMode() {
-    const [theme, setTheme] = useState("dark" || "light")
+    const [theme, setTheme] = useState("dark " || "light")
     const toggleTheme = () => {
         if (theme === "dark") {
             setTheme("light")

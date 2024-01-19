@@ -249,7 +249,7 @@ export default function Market() {
     ]
     return (
         <main>
-            <div className="z-10">
+            <div className="z-10 xsm:pt-[20px] md:pt-0">
                 <div className="flex flex-col h-full gap-[30px] lg:px-[115px] lg:py-[80px] md:px-[77px] md:py-[60px] px-[30px] py-[40px]">
                     <div>
                         <h1 className="dark:text-white text-black lg:w-full font-sans text-[28px] md:text-[38px] lg:text-[51px] font-semibold mb-2">

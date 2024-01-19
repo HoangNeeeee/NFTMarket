@@ -2,7 +2,7 @@ import React from "react"
 import Image from "next/image"
 export default function wallet() {
     return (
-        <div className="flex justify-between flex-col md:flex-row dark:bg-[#2B2B2B] bg-white">
+        <div className="flex justify-between flex-col md:flex-row dark:bg-[#2B2B2B] bg-white xsm:pt-[20px] md:pt-0">
             <div className="md:w-[45%] flex flex-col w-full relative md:h-auto object-cover h-[300px]">
                 <Image
                     className="object-cover"
@@ -13,12 +13,12 @@ export default function wallet() {
             </div>
             <div className="flex flex-col md:w-1/2 h-full px-[30px] mb-[100px]">
                 <div className="flex md:justify-start md:items-start justify-center items-center">
-                    <h1 className="flex justify-center items-center md:justify-start md:items-start dark:text-white text-black font-sans text-[51px] font-semibold w-[460px] mb-5">
+                    <h1 className="flex justify-start items-start dark:text-white text-black font-sans xsm:text-[38px] lg:text-[51px] font-semibold w-[460px] mb-5">
                         Connect Wallet
                     </h1>
                 </div>
-                <div className="flex md:justify-start md:items-start justify-center items-center">
-                    <h1 className="dark:text-white text-black w-[320px] mb-10">
+                <div className="flex justify-start items-start">
+                    <h1 className="dark:text-white xsm:text-[16px] lg:text-[22px] text-black w-[320px] mb-10">
                         Choose a wallet you want to connect. There are several
                         wallet providers.
                     </h1>

@@ -87,12 +87,12 @@ export default function ranking() {
         },
     ]
     return (
-        <main className="mb-[20px] z-10">
+        <main className="mb-[20px] z-10 xsm:pt-[20px] md:pt-0">
             <div className="lg:px-[115px] lg:py-[80px] xsm:px-[30px] xsm:py-[30px]">
-                <h1 className="dark:text-white text-black font-sans text-[51px] font-semibold">
+                <h1 className="dark:text-white text-black font-sans xsm:text-[28px] md:text-[38px] lg:text-[51px] font-semibold">
                     Top Creators
                 </h1>
-                <h1 className="font-sans text-[22px] dark:text-white text-black">
+                <h1 className="font-sans xsm:text-[16px] lg:text-[22px] dark:text-white text-black">
                     Check out top ranking NFT artists on the NFT Marketplace.
                 </h1>
             </div>

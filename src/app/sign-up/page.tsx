@@ -4,7 +4,7 @@ import UserIcon from "@/assets/icons/ic_user.svg"
 import { SignUpForm } from "@/components"
 export default function Home() {
     return (
-        <main className="flex justify-between flex-col md:flex-row dark:bg-[#2B2B2B] bg-white z-10">
+        <main className="flex justify-between flex-col md:flex-row dark:bg-[#2B2B2B] bg-white z-10 xsm:pt-[20px] md:pt-0">
             <div className="md:w-[45%] flex flex-col w-full relative md:h-auto object-cover h-[300px]">
                 <Image
                     className="object-cover"
