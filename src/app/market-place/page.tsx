@@ -5,6 +5,9 @@ import { Discover } from "@/components"
 import { Tabs } from "antd"
 import type { TabsProps } from "antd"
 import "./index.css"
+import axios from "axios"
+
+console.log(axios.isCancel("something"))
 
 export default function Market() {
     const onChange = (key: string) => {
@@ -246,7 +249,7 @@ export default function Market() {
     ]
     return (
         <main>
-            <div>
+            <div className="z-10">
                 <div className="flex flex-col h-full gap-[30px] lg:px-[115px] lg:py-[80px] md:px-[77px] md:py-[60px] px-[30px] py-[40px]">
                     <div>
                         <h1 className="dark:text-white text-black lg:w-full font-sans text-[28px] md:text-[38px] lg:text-[51px] font-semibold mb-2">

@@ -39,7 +39,7 @@ export function Header() {
     }, [theme])
 
     return (
-        <header className="py-1 md:py-3 lg:py-5 px-7 flex flex-row dark:bg-[#3B3B3B] bg-white justify-between">
+        <header className="py-1 md:py-3 lg:py-5 px-7 flex flex-row w-full dark:bg-[#3B3B3B] bg-white justify-between z-50 xsm:fixed md:static">
             <div className="flex flex-row items-center">
                 <Image
                     className="mr-4"
@@ -106,7 +106,7 @@ export function Header() {
                     </button>
                 </div>
             )}
-            <div className="flex justify-center">
+            <div className="flex justify-center lg:hidden">
                 <button>
                     {/* <Hamburger /> */}
                     <NavMobile />

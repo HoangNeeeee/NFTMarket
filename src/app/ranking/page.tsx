@@ -87,7 +87,7 @@ export default function ranking() {
         },
     ]
     return (
-        <main className="mb-[20px]">
+        <main className="mb-[20px] z-10">
             <div className="lg:px-[115px] lg:py-[80px] xsm:px-[30px] xsm:py-[30px]">
                 <h1 className="dark:text-white text-black font-sans text-[51px] font-semibold">
                     Top Creators
