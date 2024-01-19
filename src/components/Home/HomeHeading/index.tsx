@@ -3,7 +3,7 @@ import React from "react"
 
 export const HomeHeading = () => {
     return (
-        <div className="px-[30px] py-[40px] md:px-[72px] md:py-[80px] lg:px-[115px] w-full">
+        <div className="px-[30px] py-[40px] md:px-[72px] md:py-[80px] lg:px-[115px] w-full xsm:pt-[20px] md:pt-0">
             <div className="justify-center">
                 <div className="w-full h-auto flex flex-col md:flex-row justify-center gap-10">
                     <div className="md:w-1/2">
