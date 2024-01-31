@@ -294,9 +294,14 @@ const items: TabsProps["items"] = [
 // Hàm random usercode và click copy to clipboard
 function userProfile() {
     const crypto = require("crypto")
-    const string = "HoangNeee"
+    let timestamp = new Date().getTime()
+    console.log(timestamp.toString())
+
     // const buf = crypto.randomBytes(60)
-    const hash = crypto.createHash("sha512").update(string).digest("hex")
+    const hash = crypto
+        .createHash("sha512")
+        .update(timestamp.toString())
+        .digest("hex")
     const [value, copy] = useCopyToClipboard()
 
     const onCLick = () => {
