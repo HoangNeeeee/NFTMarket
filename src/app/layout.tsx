@@ -1,6 +1,7 @@
 import { Footer, Header, ToastContainer } from "@/components"
 import "./globals.css"
 import { Inter } from "next/font/google"
+import { BackTop } from "antd"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
                 <div className="w-full min-h-screen flex flex-col justify-between">
                     <Header />
                     <div className="dark:bg-[#2B2B2B] bg-white">{children}</div>
+                    <BackTop/>
                     <hr />
                     <Footer />
                     <ToastContainer />

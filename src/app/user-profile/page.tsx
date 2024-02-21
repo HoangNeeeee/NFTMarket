@@ -7,6 +7,8 @@ import { Tabs } from "antd"
 import type { TabsProps } from "antd"
 import "./index.css"
 import { max } from "lodash"
+import TestAntDesign from "@/components/TestAntDesign"
+import AntDesignNoti from "@/components/AntDesignNoti"
 
 // Hàm thay đổi view theo key
 const onChange = (key: string) => {
@@ -311,6 +313,7 @@ function userProfile() {
     }
     return (
         <div className="relative w-full z-10 xsm:pt-[20px] md:pt-0">
+            <AntDesignNoti />
             <div className="relative bg-gradient-to-b from-[#00000000] to-[#A259FF] flex mb-20">
                 <Image
                     className="bg-gradient-to-b from-[#00000000] to-[#A259FF] w-full "

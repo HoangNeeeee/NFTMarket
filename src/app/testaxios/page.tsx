@@ -36,6 +36,7 @@ const testAxios = () => {
                     <li key={movie.id}>{movie.movie}</li>
                 ))}
             </ul>
+            <TestAntdesign />
         </>
     )
 }
