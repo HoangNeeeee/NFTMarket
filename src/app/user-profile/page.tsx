@@ -7,7 +7,6 @@ import { Tabs } from "antd"
 import type { TabsProps } from "antd"
 import "./index.css"
 import { max } from "lodash"
-import TestAntDesign from "@/components/TestAntDesign"
 import AntDesignNoti from "@/components/AntDesignNoti"
 
 // Hàm thay đổi view theo key
@@ -313,7 +312,6 @@ function userProfile() {
     }
     return (
         <div className="relative w-full z-10 xsm:pt-[20px] md:pt-0">
-            <AntDesignNoti />
             <div className="relative bg-gradient-to-b from-[#00000000] to-[#A259FF] flex mb-20">
                 <Image
                     className="bg-gradient-to-b from-[#00000000] to-[#A259FF] w-full "
@@ -323,14 +321,14 @@ function userProfile() {
                     alt=""
                 />
                 {/* Ảnh đại diện của người dùng */}
-                <div className="absolute md:mt-32 lg:mt-80 sm:px-[127px] md:px-[72px] lg:px-[115px]">
-                    <Image
+                <div className="absolute sm:px-[127px] md:mt-32 md:px-[72px] lg:mt-80 lg:px-[115px]">
+                    {/* <Image
                         className=""
                         src="/AvatarUserProfile.svg"
                         width={120}
                         height={120}
                         alt=""
-                    />
+                    /> */}
                 </div>
             </div>
 
@@ -338,7 +336,7 @@ function userProfile() {
                 <div>
                     <div className="flex flex-col gap-[30px]">
                         <div className="flex">
-                            <h1 className="font-sans text-[51px] font-semibold dark:text-white text-black">
+                            <h1 className="font-sans  lg:text-[51px] font-semibold dark:text-white text-black">
                                 AnimaKid
                             </h1>
                         </div>

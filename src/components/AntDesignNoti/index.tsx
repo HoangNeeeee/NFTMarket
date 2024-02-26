@@ -1,6 +1,5 @@
 "use client"
 import React, { useMemo } from "react"
-import "./index.css"
 import { Button, Divider, InputNumber, notification, Space, Switch } from "antd"
 
 const Context = React.createContext({ name: "Default" })
