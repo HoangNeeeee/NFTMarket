@@ -81,13 +81,13 @@ export function Footer() {
                         Explore
                     </p>
                     <button className="flex dark:text-[#CCCCCC] mt-[25px] hover:text-blue-700">
-                        MarketPlace
+                        <a href="/market-place">MarketPlace</a>
                     </button>
                     <button className="flex dark:text-[#CCCCCC] mt-[20px] hover:text-blue-700">
-                        Rankings
+                        <a href="/ranking">Ranking</a>
                     </button>
                     <button className="flex dark:text-[#CCCCCC] mt-[20px] hover:text-blue-700">
-                        Connect a wallet
+                        <a href="/wallet">Connect To Wallet</a>
                     </button>
                 </div>
                 <div className="flex flex-col flex-1 lg:max-w-[400px] relative">
@@ -135,7 +135,7 @@ export function Footer() {
                 Ⓒ NFT Market. Use this template freely.
             </p>
             <p className="dark:text-white font-mono">
-                Design By EmHoangDangThoOxy
+                Designed By EmHoangDangThoOxy
             </p>
         </footer>
     )
