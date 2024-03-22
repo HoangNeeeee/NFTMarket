@@ -21,7 +21,7 @@ export default function RootLayout({
                 <div className="w-full min-h-screen flex flex-col justify-between">
                     <Header />
                     <div className="dark:bg-[#2B2B2B] bg-white">{children}</div>
-                    <BackTop/>
+                    <BackTop />
                     <hr />
                     <Footer />
                     <ToastContainer />

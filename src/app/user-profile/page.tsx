@@ -321,26 +321,53 @@ function userProfile() {
                     alt=""
                 />
                 {/* Ảnh đại diện của người dùng */}
-                <div className="absolute sm:px-[127px] md:mt-32 md:px-[72px] lg:mt-80 lg:px-[115px]">
-                    {/* <Image
+                <div className="absolute flex xsm:justify-center sm:px-[127px] md:mt-32 md:px-[72px] lg:mt-80 lg:px-[115px]">
+                    <Image
                         className=""
-                        src="/AvatarUserProfile.svg"
+                        src="/BlackCat.svg"
                         width={120}
                         height={120}
                         alt=""
-                    /> */}
+                    />
                 </div>
             </div>
-
-            <div className="w-full flex justify-between gap-[100px] md:flex-col md:px-[72px] lg:px-[115px] py-[40px]">
+            <div className="w-full flex justify-between md:flex-col xsm:px-[30px] md:px-[72px] lg:px-[115px] py-[40px]">
                 <div>
                     <div className="flex flex-col gap-[30px]">
-                        <div className="flex">
-                            <h1 className="font-sans  lg:text-[51px] font-semibold dark:text-white text-black">
+                        <div className="flex xsm:justify-center sm:justify-normal">
+                            <h1 className="font-sans xsm:text-[28px] lg:text-[51px] font-semibold dark:text-white text-black">
                                 AnimaKid
                             </h1>
                         </div>
-                        <div className="flex gap-[20px]">
+                        <div className="flex xsm:justify-center xsm:items-center sm:items-start sm:justify-normal xsm:flex-col sm:flex-row gap-[20px]">
+                            <button
+                                onClick={onCLick}
+                                className="flex w-[190px] h-[60px] gap-3 bg-[#A259FF] rounded-2xl items-center justify-center px-2"
+                            >
+                                <Image
+                                    src="CopyImage.svg"
+                                    alt=""
+                                    width={20}
+                                    height={20}
+                                />
+                                <h1 className="text-white  font-sans font-semibold truncate">
+                                    {hash}
+                                    {/* {buf} */}
+                                </h1>
+                            </button>
+                            <button className="flex w-[190px] h-[60px] border-[2px] rounded-2xl gap-3 items-center justify-center">
+                                <Image
+                                    src="plus.svg"
+                                    alt=""
+                                    width={20}
+                                    height={20}
+                                />
+                                <h1 className="dark:text-white text-black font-sans font-semibold">
+                                    Follow
+                                </h1>
+                            </button>
+                        </div>
+                        <div className="flex xsm:justify-between sm:justify-normal gap-[20px]">
                             <div>
                                 <h1 className="font-sans text-[28px] font-semibold dark:text-white text-black">
                                     250k+
@@ -413,7 +440,7 @@ function userProfile() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-row gap-[20px]">
+                <div className="flex flex-row gap-[20px] xsm:hidden">
                     <button
                         onClick={onCLick}
                         className="flex w-[190px] h-[60px] gap-3 bg-[#A259FF] rounded-2xl items-center justify-center px-2"
@@ -429,7 +456,7 @@ function userProfile() {
                             {/* {buf} */}
                         </h1>
                     </button>
-                    <button className="flex w-[145px] h-[60px] border-[2px] rounded-2xl gap-3 items-center justify-center">
+                    <button className="flex w-[190px] h-[60px] border-[2px] rounded-2xl gap-3 items-center justify-center">
                         <Image src="plus.svg" alt="" width={20} height={20} />
                         <h1 className="dark:text-white text-black font-sans font-semibold">
                             Follow
@@ -438,7 +465,7 @@ function userProfile() {
                 </div>
             </div>
             <hr className="h-[2px]" />
-            <div className="flex justify-between dark:text-white text-black px-[115px] font-sans font-semibold text-[22px]">
+            <div className="flex flex-wrap gap-[30px] w-full justify-centers dark:text-white text-black font-sans font-semibold text-[22px]">
                 <Tabs
                     className=""
                     defaultActiveKey="1"
