@@ -2,7 +2,6 @@ import { Footer, Header, ToastContainer } from "@/components"
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { BackTop } from "antd"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -25,7 +24,6 @@ export default function RootLayout({
                     <BackTop />
                     <hr />
                     <Footer />
-                    <SpeedInsights />
                     <ToastContainer />
                 </div>
             </body>
