@@ -23,9 +23,9 @@ const schema = yup
             .required()
             .min(8, "Password must be 8 characters long")
             .matches(/[A-Z]/, "Password requires an uppercase letter"),
-        ComfirmPassword: yup
+        ConfirmPassword: yup
             .string()
-            .oneOf([yup.ref("Password")], "Password Not Match"),
+            .oneOf([yup.ref("Password")], "Password not match"),
     })
     .required()
 
@@ -40,7 +40,7 @@ export const SignUpForm = () => {
     const onSubmit = (data: any) => console.log(data)
     const onClick = () => {
         handleSubmit(onSubmit)
-        toast("Your Account Has Been Created")
+        // toast("Your Account Has Been Created")
     }
     return (
         <div className="mt-10 mb-20 flex flex-col w-80">
@@ -72,14 +72,14 @@ export const SignUpForm = () => {
                 <WSInput
                     placeholder="Comfirm Password"
                     password
-                    {...register("ComfirmPassword")}
+                    {...register("ConfirmPassword")}
                 />
             </div>
-            <p className="text-red-500">{errors.ComfirmPassword?.message}</p>
+            <p className="text-red-500">{errors.ConfirmPassword?.message}</p>
 
             <button
                 className="rounded-2xl bg-[#A259FF] mt-7 h-11 font-sans font-semibold not-italic text-white"
-                onClick={onClick}
+                onClick={handleSubmit(onClick)}
             >
                 Create Account
             </button>

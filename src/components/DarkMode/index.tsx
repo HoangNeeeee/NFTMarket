@@ -31,7 +31,7 @@ export function DarkMode() {
                 />
             ) : (
                 <FontAwesomeIcon
-                    className=" w-[40px] h-[40px]"
+                    className="dark:bg-white bg-[#3B3B3B] w-[40px] h-[40px]"
                     icon={faSun as IconProp}
                     title="Light Mode"
                     color="black"

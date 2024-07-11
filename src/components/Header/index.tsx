@@ -9,28 +9,19 @@ import { Hamburger } from "../HamburgerBar"
 import { theme } from "antd"
 import { NavMobile } from "../navMobile"
 export function Header() {
-    // useEffect(() => {
-    //     const theme = localStorage.getItem("theme")
-    //     const htmlClasses = document.querySelector("html")?.classList
-    //     if (theme === "dark") {
-    //         document.querySelector("html")?.classList.add("dark")
-    //     } else {
-    //         htmlClasses?.remove("dark")
-    //     }
-    // }, [theme])
     function getItem() {
         localStorage.getItem("theme")
     }
     const linkStyle = {
         marginRight: 15,
     }
-    function MenuBar() {
-        const [isOpen, setIsOpen] = useState(false)
+    // function MenuBar() {
+    //     const [isOpen, setIsOpen] = useState(false)
 
-        const toggleMenu = () => {
-            setIsOpen((open) => !open)
-        }
-    }
+    //     const toggleMenu = () => {
+    //         setIsOpen((open) => !open)
+    //     }
+    // }
     const breakpoint = useBreakpoint()
 
     useEffect(() => {
@@ -108,7 +99,6 @@ export function Header() {
             )}
             <div className="flex justify-center lg:hidden">
                 <button>
-                    {/* <Hamburger /> */}
                     <NavMobile />
                 </button>
                 <button>
