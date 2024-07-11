@@ -22,7 +22,7 @@ const theme = {
     whitebg: {
         bgColor: "bg-white",
         borderColor: "",
-        textColor: "dark:text-white text-black",
+        textColor: "text-black ",
         borderWidth: "border-0",
     },
 }
