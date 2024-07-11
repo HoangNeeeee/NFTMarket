@@ -147,23 +147,18 @@ export default function ranking() {
                     </div>
                 </div>
             </div>
-            <div>
-                <a
-                    href="/user-profile"
-                    className="flex flex-col w-full py-[40px] gap-[20px]"
-                >
-                    {ranking.map((ranking, index) => (
-                        <RankingCreator
-                            key={index}
-                            indexNumber={index + 1}
-                            imageSrc={ranking.imageSrc}
-                            artistName={ranking.artistName}
-                            changePercent={ranking.changePercent}
-                            quantityInStock={ranking.quantityInStock}
-                            quantitySold={ranking.quantitySold}
-                        />
-                    ))}
-                </a>
+            <div className="flex flex-col w-full py-[40px] gap-[20px]">
+                {ranking.map((ranking, index) => (
+                    <RankingCreator
+                        key={index}
+                        indexNumber={index + 1}
+                        imageSrc={ranking.imageSrc}
+                        artistName={ranking.artistName}
+                        changePercent={ranking.changePercent}
+                        quantityInStock={ranking.quantityInStock}
+                        quantitySold={ranking.quantitySold}
+                    />
+                ))}
             </div>
         </main>
     )

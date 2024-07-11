@@ -6,10 +6,8 @@ import {
     TopCreator,
     TredingCollection,
     Usermanual,
-    Mashroom,
-    // ContactButton,
-    // BurgerButton,
 } from "@/components"
+import { Mashroom } from "@/components/Home/Mashroom"
 import { Suspense } from "react"
 export default function Page() {
     return (
@@ -23,8 +21,6 @@ export default function Page() {
                 <Mashroom />
                 <Usermanual />
                 <HomeFooter />
-                {/* <BurgerButton />
-                <ContactButton /> */}
             </Suspense>
         </main>
     )

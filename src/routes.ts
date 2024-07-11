@@ -6,7 +6,7 @@ import { IoPricetagsOutline } from "react-icons/io5"
 export const routes = [
     {
         title: "Market Place",
-        href: "/market",
+        href: "/market-place",
         Icon: FiSearch,
     },
     {
